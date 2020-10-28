@@ -1,0 +1,1492 @@
+repository,number,title,bodyText,publishedAt,closed,closedAt,commentCount
+freeCodeCamp/freeCodeCamp,1,Facebook registration is not working ,"The facebook registration did not work. I was redirected to my facebook were there was a messege saying ""This app has no facebook permissions""",2014-12-24T19:37:16Z,1,2014-12-26T14:42:39Z,10
+freeCodeCamp/freeCodeCamp,3,Firefox Challenge 14 Dead Chrome Link,"Hello,
+On Firefox 34 on a Windows 7 32-bit PC, the link to download Google Chrome on challenge 14 is not working.",2014-12-26T04:12:26Z,1,2014-12-27T05:57:27Z,1
+freeCodeCamp/freeCodeCamp,4,Can't login with Github,"I can't login with Github. When I try, it logs me into someone else's account. I didn't realize it was logging me into someone else's account, so I deleted the account once logged in, and then tried again. I was again logged into someone else's account (a different user this time).
+Out of curiosity, I had to try deleting this user account as well (sorry!), and when I logged back in again with Github, I was signed in as a different user again. I assume these were all real accounts because they had different user profile pics and such.
+It had been a few weeks since I had logged in. Pre-switching away from hipchat, if that helps.",2014-12-28T19:19:59Z,1,2015-01-17T19:48:02Z,12
+freeCodeCamp/freeCodeCamp,6,Dead teamviewer hyperlink on Challenge 34,"Hello,
+I was attempting to use the hyperlink to Team Viewer on Challenge 34, but it did not work. It lead me to this screen. I am using latest Firefox on Windows 7 32-Bit.",2014-12-31T05:13:20Z,1,2014-12-31T07:40:51Z,2
+freeCodeCamp/freeCodeCamp,11,Grab larger Twitter image?,"The new bio's page needs a larger image than is currently being pulled during sign-up with Twitter. Right now, the default image is blurry. Not sure if this is also happening with other authorization methods. It is an easy fix by changing it on the form, but I'm assuming this could be a easier user experience.
+For example, the image from my original Twitter sign-up pulled this image ""normal"" image:
+https://pbs.twimg.com/profile_images/539515557184167936/JqJXzV9x_normal.jpeg
+But it would be better to go with the original:
+https://pbs.twimg.com/profile_images/539515557184167936/JqJXzV9x.jpeg
+Here is a link to the twitter documentation specific to these image sizes: https://dev.twitter.com/overview/general/user-profile-images-and-banners",2015-01-09T16:25:28Z,1,2015-01-12T19:21:08Z,2
+freeCodeCamp/freeCodeCamp,15,Email Password Reset Form Not Working,Password form button does not respond to click. Additionally the jumbotron div that is meant to have a white background for the form is too short (only approx 96px and form is 317px).,2015-01-10T05:12:43Z,1,2015-01-13T06:44:10Z,5
+freeCodeCamp/freeCodeCamp,17,Blank account update form,"It flashes the form fields for a second and then is blank between ""Update your profile here:"" and ""Actions"" headings. Here's the console error:
+TypeError: Cannot read property 'toLowerCase' of undefined
+at http://www.freecodecamp.com/assets/main-f8954d61b57a2ddb3277b1552c0c3545.js:49:72
+at http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js:81:132
+at http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js:112:276
+at l.$eval (http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js:126:84)
+at l.$digest (http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js:123:195)
+at l.$apply (http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js:126:362)
+at l (http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js:81:422)
+at O (http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js:86:51)
+at XMLHttpRequest.w.onload (http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js:87:78)
+That looks like it's on the $scope.user.profile.username.toLowerCase() on line 49. The JSON from my /account/api doesn't have a user.profile.username key.
+Maybe it would be a simple fix of piping?
+$scope.user.profile.username = $scope.user.profile.username.toLowerCase() || '';",2015-01-12T14:42:08Z,1,2015-01-12T20:04:16Z,4
+freeCodeCamp/freeCodeCamp,18,"""Fork me on GitHub"" ribbon is positioned wrongly when error notification is displayed","If I try to view a FCC user by entering a URL (freecodecamp.com/namehere) and the user isn't found, an error is displayed when I return to the FCC page (""We couldn't find a Code Camper with that username.""). The error bubble pushes down the ""Fork me on GitHub"" ribbon so that it isn't flush with the top navbar of the page.",2015-01-12T14:58:51Z,1,2015-01-17T05:50:54Z,2
+freeCodeCamp/freeCodeCamp,19,Account Page Loading Error (Chrome),"When opening http://www.freecodecamp.com/account in chrome, the ""update your profile"" section does not load any fields underneath.",2015-01-12T19:17:38Z,1,2015-01-12T20:05:14Z,1
+freeCodeCamp/freeCodeCamp,20,Account Page Loading Error (IE),"When loading http://www.freecodecamp.com/account in IE, it does not load properly.",2015-01-12T19:18:22Z,1,2015-01-17T19:49:20Z,7
+freeCodeCamp/freeCodeCamp,24,typo on http://www.freecodecamp.com/about,Last paragraph - 'persevere' is spelled incorrectly as 'perservere',2015-01-14T14:51:05Z,1,2015-01-14T15:37:20Z,4
+freeCodeCamp/freeCodeCamp,25,Typo in Challenge #13,"Changing ""it's"" to ""its"".",2015-01-14T16:47:58Z,1,2015-01-14T16:56:15Z,1
+freeCodeCamp/freeCodeCamp,28,Screen Reader Accessibility of Embedded Youtube Videos,"There isn't a play button accessible to screen readers in embedded YouTube videos. This means that the previous live pairing videos are not accessible. I tested it out with Voice Over and can't access a play button at all.
+The workaround for this is to offer a direct link to the YouTube videos, because the YouTube website itself is accessible to screen readers. I suggest we do that. Or, if nothing else, we need more copy on the live pairing page to explain what is there. Right now there isn't enough context for what is on the page if a person can't see it.
+Note: Vimeo videos have an accessible play button, so challenge videos are okay.",2015-01-16T02:47:00Z,1,2015-01-17T05:51:45Z,3
+freeCodeCamp/freeCodeCamp,29,Accessibility,"If free code camp is to be welcoming to all, the website needs more accessibility coverage.
+To start, my suggestion is to add an extra bullet on the first challenge (http://www.freecodecamp.com/challenges/0) that makes it clear that we are here to support everyone in their learning with extra information for people that need full accessibility with screen readers or those whom cannot hear the un-captioned challenge videos.
+We could have a section with guidelines on what to do if a camper runs into an accessibility issue (seek out someone in the chat, send an email, submit an issue/PR in the repo, etc).",2015-01-16T02:55:50Z,1,2015-01-17T05:54:29Z,4
+freeCodeCamp/freeCodeCamp,31,Add Footer with links to FCC,"None of the FCC pages (logged in or out) has a footer bar or footer menu with relevant links for users to follow.
+Adding a footer bar with links to more info about FCC:
+
+Blog link (currently no link anywhere),
+Creative Commons/ Open Source License/ Copyright,
+Github and Social Media links,
+Privacy Policy,
+Forum and Chat links
+
+Not only will this make exploring FCC much easier but will be great for SEO as well.",2015-01-17T11:54:02Z,1,2015-01-21T15:28:14Z,3
+freeCodeCamp/freeCodeCamp,32,Twitter requests permission each time user authenticates,"@figitalboy originally reported: Each time I log in with Twitter, I still have to authorize the app to allow FCC access to my profile.",2015-01-17T19:51:19Z,1,2015-01-17T22:48:57Z,4
+freeCodeCamp/freeCodeCamp,40,Bonefire page title,"On the bonfire page the title should have Learn to code with bonfire | Free Code Camp.
+Learn to code is our SEO keyword, so we want to implement that when we can.",2015-01-18T16:21:22Z,1,2015-01-18T16:23:38Z,1
+freeCodeCamp/freeCodeCamp,42,Bonfire Button padding,"When you hover your mouse over the button, the bonfire button is snugged against ""Sign in""  maybe add some padding will help?",2015-01-18T17:57:00Z,1,2015-01-22T19:54:59Z,1
+freeCodeCamp/freeCodeCamp,43,Achivements not saved ,"Hi,
+i was working on firefox and all my achievements was saved when i come back to working on them. then i moved to google Chrome, after logging with the same account, it brings me to the first challenge and all my achievements was lost.
+Thanks for the great work you've done",2015-01-19T15:16:01Z,1,2015-01-22T19:56:03Z,5
+freeCodeCamp/freeCodeCamp,44,Bonfire code font not good,"Existing font may look good for the code typed in the editor, but it's a pain to indent and maintain indentation as each letter is of not the same size, could you guys please move to courier new, monospace or something similar?",2015-01-20T16:07:40Z,1,2015-01-21T15:26:10Z,2
+freeCodeCamp/freeCodeCamp,46,No jQuery Exercise Descriptions in Firefox,No descriptions and therefore no way to complete these exercises in Firefox.,2015-01-22T16:58:09Z,1,2015-01-23T08:45:40Z,1
+freeCodeCamp/freeCodeCamp,48,Forum Post Withdrawal,"Discourse may not be deleting posts withdrawn by author; withdrawn posts are supposedly programmed to be withdrawn 24 hours after withdrawal. I have attached a picture of an issue and anonymized the original poster.
+The issue was found on google chrome on windows 7.
+Please note, the post was posted 4 days ago. It is possible author may have withdrawn post recently. If post in question still exists by Sunday, 1/25, posts may not be self-withdrawing.
+
+.....if picture is not visible,
+feel free to find bug at http://forum.freecodecamp.com/t/seattle-area-free-code-campers/141/18",2015-01-23T21:57:03Z,1,2015-02-03T00:39:43Z,2
+freeCodeCamp/freeCodeCamp,49,Change Challenge Complete Tweet to @FreeCodeCamp,"(enhancement)
+When selecting ""challenge complete"" the pop-up gives you an option to tweet about it:
+
+I just ROCKED Free Code Camp Challenge #4: Build a Responsive Blog Theme http://freecodecamp.com/challenges/4 #learntocode #javascript
+
+Perhaps consider changing the text to include the Free Code Camp username. The same message is conveyed, but gives an additional lead opportunity to the Twitter account:
+
+I just ROCKED @freeCodeCamp Challenge #4: Build a Responsive Blog Theme http://freecodecamp.com/challenges/4 #learntocode #javascript",2015-01-24T16:46:45Z,1,2015-01-31T23:49:57Z,2
+freeCodeCamp/freeCodeCamp,53,Bonfire Challenges,"I've had to reenter many of the challenges after pressing 'Take me to the next challenge.'
+Also, on several of the challenges the test console output show errors (e.g. Unexpected Token) with no output concerning the test, but it still passes. I'll get a screenshot shot the next time it happens.",2015-01-28T19:07:06Z,1,2015-01-29T05:45:22Z,3
+freeCodeCamp/freeCodeCamp,54,Login/Avatar/Profile Edit Problem,"I have had issues after filling out my FCC public profile.
+Test Settings: Windows 7 Firefox 32 bit
+Bug Trigger: Filled out profile fields. Profile fields include Username(path to public profile), Twitter, Github, CoderByte, and LinkedIn.
+Bug Description:
+Avatar picture will not display.
+Cannot login.
+Cannot login even after resetting password.
+Cannot edit Profile after first profile edit.
+Bug Reproduction:
+Could not reproduce with a secondary test account, bug only found with Nguyench@live.com.
+Link with google, attached video of the bug.
+https://drive.google.com/file/d/0B-94cRSEUQu_YkdvTTlaWEM4UGs/view?usp=sharing",2015-01-28T21:08:45Z,1,2015-02-02T23:54:03Z,2
+freeCodeCamp/freeCodeCamp,56,Bonfire - Title Case a Sentence,"As it is at the present moment, the starting code format for Title Case a Sentence misses a semi-colon at the end of the last line as shown in the picture.
+
+I would've fixed the issue myself but I think this comes from the challenge seed in the db.",2015-01-28T23:03:14Z,1,2015-01-28T23:25:03Z,1
+freeCodeCamp/freeCodeCamp,59,Tweets on the about page,"Is there a reason a live twitter feed hasn't been implemented yet on the about page? One reason I could think of is from a marketing perspective, wanting to have selective tweets.
+However, they seem a bit outdated now and every time I see the page they're always the same. Perhaps it would be a good idea to insert a live twitter feed following @freeCodeCamp ? If it's desirable I could take a look into it.",2015-01-29T01:19:29Z,1,2015-01-31T23:24:03Z,1
+freeCodeCamp/freeCodeCamp,60,titleCase challenge,I'm getting an error on this challenge and can't continue.,2015-01-29T02:31:37Z,1,2015-01-31T23:46:35Z,2
+freeCodeCamp/freeCodeCamp,63,More graceful merging of different oauth accounts,,2015-01-30T03:46:09Z,1,2015-01-31T23:53:00Z,0
+freeCodeCamp/freeCodeCamp,67,FORUM Login infinite loop,"My first time at the forum for freecodecamp following step #2. Instead of using the 'signup', I decided to use 'login' and I was redirected to github for authentication. This part was fine but after being redirected back to freecodecamp, a new window infinitely opened and closed. I had to force close, refresh and use the 'signup'.",2015-01-31T09:24:58Z,1,2015-01-31T23:26:09Z,1
+freeCodeCamp/freeCodeCamp,71,Buttons Below Challenge NonFunctional,"Don't know what happened, but around midnight PST we lost functionality with the two buttons
+[I've completed this challenge] and [Show me all challenges]. When you click either/or they do not do anything. I am using Chrome & Win 7, this error is being experienced from other members, this doesn't appear to be isolated.
+https://photos-3.dropbox.com/t/2/AABUlSgswrFhjmjO0xKLwGLO3elOLPO-gOqpVRVrbQMDWA/12/353228789/png/1024x768/2/_/0/4/Screenshot%202015-02-03%2003.03.42.png/CPWvt6gBIAEgAiADKAE/kyy49tuc5krkkjd/AABhbjocnzy13CXPnO-We7rEa/Screenshot%202015-02-03%2003.03.42.png",2015-02-03T09:09:32Z,1,2015-02-03T15:46:25Z,4
+freeCodeCamp/freeCodeCamp,72,Image URL in profile need not end with any extension,"Please remove this limitation, this is not correct.
+Usually gravatars are served as blobs. For example, here's mine:
+https://avatars0.githubusercontent.com/u/1734792",2015-02-03T13:09:35Z,1,2015-02-07T16:00:40Z,2
+freeCodeCamp/freeCodeCamp,75,Next Challenge Logic,"While this is nothing major, I thought you guys might like to correct this logic in the code. When you load freecodecamp.com it by default takes you to your current challenge. It appears that the challenge returned is the next challenge after the last one you completed. However, the logic should be the next uncompleted challenge greater than the last one you completed.
+For example, coderbytes was my last completed challenge. So when I load FCC it takes me to the next challenge after that, Manage Source Code with Git, even thought it should be showing me my next uncompleted challenge, Using Redis to Persist Data.
+I can demonstrate if needed, no big deal; thought you might like to fix.",2015-02-04T11:59:35Z,1,2015-02-11T17:42:34Z,2
+freeCodeCamp/freeCodeCamp,76,Social Media Login/Link,"This is not a bug, but it would be a nice login feature. Currently, there seems to be no way to delete or reset the social media logins. When I go to the profile page, I do not see any options to change the social media links. I have attached an image of what I encounter when I try to change the facebook login.",2015-02-04T17:55:26Z,1,2015-03-22T18:58:17Z,7
+freeCodeCamp/freeCodeCamp,78,Infinite Challenges/Points,"After a user completes all challenges, click on take me to my next challenge forwards to a challenge number that doesn't really exist, and awards a point for completion.",2015-02-05T08:56:09Z,1,2015-02-07T15:57:32Z,3
+freeCodeCamp/freeCodeCamp,79,Profile update buttons,"The update profile info buttons are all disabled for no apparent reason, and so users cannot add profiles/info",2015-02-05T08:58:12Z,1,2015-02-05T14:58:50Z,3
+freeCodeCamp/freeCodeCamp,80,Bonfire Pair Input - Enter Button Does Not Submit,"This is a minor UX gripe, please consider when there is more time. After putting in the username of the pair partner into the pair field, one must click on the button to proceed rather than the enter key submitting the pair partner username and going to the next challenge.
+Attached is a video of the UX shortcoming. I used a test account for the video.
+https://drive.google.com/file/d/0B-94cRSEUQu_RnFHTWhnSnhFODQ/view?usp=sharing",2015-02-05T14:28:55Z,1,2015-02-11T16:40:47Z,2
+freeCodeCamp/freeCodeCamp,83,Having to enter email multiple times,When you finally complete all the challenges it sends you to the page where you put your email. Then after you do that is sends you to the next page. If you close the tab and want to revisit the second page you have to reenter your email. It would be faster for the user to only have to enter their email once. First page http://www.freecodecamp.com/done-with-first-100-hours and second page http://www.freecodecamp.com/nonprofit-project-instructions,2015-02-09T04:39:12Z,1,2015-02-11T17:25:47Z,1
+freeCodeCamp/freeCodeCamp,84,Coursewares Confirming Prematurely,"When typing the correct solution into the second courseware challenge (http://www.freecodecamp.com/coursewares/use-the-h2-element), I am congratulated before I have closed the h2 tag. The congratulations modal pops up once I have typed this much:
+
+If I click away from the modal, I am able to complete the tag, and then the modal pops up again. I'm assuming whatever regex or otherwise that is checking this needs some tweaking?",2015-02-09T15:28:54Z,1,2015-02-11T17:15:15Z,3
+freeCodeCamp/freeCodeCamp,89,Firefox Web Console and Bonfire Freeze,"Action Performed:
+1: Logged onto Bonfire through FCC on Firefox.
+2. Worked through problem for 5-10mins, then refreshed page.
+3. Worked for 5-10 mins and then added code before shutdown. Code before shutdown include a change in the first variable, 7.
+4. After removing 7 from the first array to revert to default arrays, web console and bonfire cease to work.
+Expected Result:
+[] and both Bonfire and Console refresh.
+Actual Result:
+No Bonfire and Console refresh. Output area with return array does not change.
+Further detail:
+Firefox 35.0.1, Windows 7 32 bit
+https://drive.google.com/file/d/0B-94cRSEUQu_YXpPMjY0Rl9vMTg/view?usp=sharing",2015-02-11T16:03:44Z,1,2015-03-08T21:25:14Z,3
+freeCodeCamp/freeCodeCamp,96,Bonfire: 'Where art thou' has inconsistent testing criteria,"Code expects, in one case, for you to only be pulling the key-value pair and treating it as a new individual object, and in the second case, for you to pull the full object that possesses the key-value pair.
+function where(collection, source) {
+  var arr = [];
+  for(var key in source) {
+    for(i = 0; i < collection.length; ++i) {
+      if(source[key] === collection[i][key])
+        arr.push(collection[i]);
+    }
+
+  }
+  return arr;
+}
+
+where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, { first: 'Tybalt', last: 'Capulet' }], { last: 'Capulet' });
+
+And output / tests:
+Fails
+assert.deepEqual(where([{ 'a': 1 }, { 'a': 1 }, { 'a': 1, 'b': 2 }], { 'a': 1 }), [{ 'a': 1 }, { 'a': 1 }, { 'a': 1 }], 'should return with multiples');AssertionError:should return with multiples: expected [ { a: 1 }, { a: 1 }, { a: 1, b: 2 } ] to deeply equal [ { a: 1 }, { a: 1 }, { a: 1 } ]
+But
+Succeeds
+assert.deepEqual(where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, { first: 'Tybalt', last: 'Capulet' }], { last: 'Capulet' }), [{ first: 'Tybalt', last: 'Capulet' }], 'should return an array of objects');",2015-02-14T21:40:00Z,1,2015-02-15T07:36:23Z,3
+freeCodeCamp/freeCodeCamp,103,"""Cash Register"" bonfire bug","In the following test-case expected ['TWENTY', 80.00], but only ['TWENTY', 60.00] available.
+assert.deepEqual(drawer(3.26, 100.00,
+
+[['PENNY', 1.01], 
+['NICKEL', 2.05], 
+['DIME', 3.10], 
+['QUARTER', 4.25], 
+['ONE', 90.00], 
+['FIVE', 55.00], 
+['TEN', 20.00], 
+['TWENTY', 60.00],
+['ONE HUNDRED', 100.00]]),
+
+[['TWENTY', 80.00], 
+['TEN', 10.00], 
+['FIVE', 5], 
+['ONE', 1], 
+['QUARTER', 0.50], 
+['DIME', 0.20], 
+['PENNY', 0.04]],
+
+'return correct change with multiple coins and bills');
+I'm going to fix it and make a pull request.",2015-02-16T06:27:26Z,1,2015-02-16T15:23:02Z,0
+freeCodeCamp/freeCodeCamp,105,'Inventory Update' bonfire bug,"Typo need to be fixed. ""Hair Pin"" is the correct variant, and ""Hair pin"" is a typo. I'll fix that.",2015-02-16T16:03:30Z,1,2015-02-17T20:35:06Z,1
+freeCodeCamp/freeCodeCamp,107,Broken link on homepage,"The link to the info about screenhero being free is broken, it sends to http://freecodecamp.com/challenges/34
+Happy to take this one on!
+Thanks,
+Sophie",2015-02-17T16:24:36Z,1,2015-02-17T20:37:55Z,2
+freeCodeCamp/freeCodeCamp,108,Chat and Forum links no longer open glitter/forum,"Hi,
+It's been a few days since I logged in.  I just logged in using the standard e-mail address.  However, now that I am logged in when I click ""Chat"" I get challenge one instead of opening a page with glitter.  I have already completed challenge one and it used to just open the ""Chat"".
+Also, if I then click ""Chat"" again while on the challenge one page, glitter will then open.
+The function is the same with forum (except brings up challenge two, once on challenge two click again and forum opens).
+I just wanted to mention it, in case it wasn't intended to operate this way.
+Thanks.",2015-02-19T19:53:36Z,1,2015-02-21T02:45:43Z,1
+freeCodeCamp/freeCodeCamp,111,more verbose bonfire challenge descriptions,"At times, the bonfire challenge descriptions do not always give a clear expectation of what the test cases are looking for. The test cases are sometimes visible when the programmer tries to run a program, but not always clearly written out from a user standpoint.
+Example: ""Where do I belong?""
+""Return the lowest index at which a value (second argument) should be inserted into a sorted array (first argument).""
+The test cases that are visible after submitting code are:
+""assert.equal(indexForNum, 3, '35 should be inserted at index 3');""
+assert.equal(indexFor30, 2, '30 should be inserted at index 2');
+While the test cases obviously work from a functionality standpoint, what is visible to the user is not always clear. What are indexforNum and then indexfor30?
+The description of the problem, visible upon load, could simply add,
+""[[2,4,6,8], 7] should return 3""
+If the lack of verbose instructions is part of the challenge, then it doesn't need changed; on the other hand, being a bit more explicit about the spec of a particular problem seems more ""real-life"" and could be helpful.
+I am willing to add this feature myself, but only if it doesn't conflict with the intent and purpose of the bonfire challenges. :)",2015-02-21T23:23:49Z,1,2015-02-22T04:44:16Z,3
+freeCodeCamp/freeCodeCamp,112,Style guide for bonfire challenges,It would be really really helpful if there was a style guide for writing bonfires.,2015-02-22T04:45:12Z,1,2015-04-12T23:42:38Z,7
+freeCodeCamp/freeCodeCamp,113,FCC Challenge tweet appears as spam by Twitter,"When completing a challenge the option is given to tweet about it.
+For the past week Twitter did not want to accept these Tweets because it looked like spam.
+I verified this with @brianamarie as being an issue on Twitter's side and not user account.
+Upon further testing, removing the website link from the tweet and keeping the @ FreeCodeCamp username and #learntocode #javascript hashtags, Twitter accepts the tweet.
+Failed via FCC Tweet link:
+
+Failed directly on Twitter:
+
+Succesful - removing FCC link:",2015-02-22T13:45:02Z,1,2015-02-22T23:03:33Z,3
+freeCodeCamp/freeCodeCamp,115,FCC points and achievement dates wrongfully reset upon clicking challenge completion,"Action Performed:
+1: Passed a bonfire challenge and changed point total from 55 to 56.
+2. Went to profile and click on challenge 3.
+3. Marked challenge 3 as completed. - Challenge 3 has already been completed.
+4. Saw point total go back to 55 and saw challenge 3 finish date set to 2/23/2015.
+Expected Result:
+Point total should remain at 56 and challenge 3 finish date should remain at the original date.
+Actual Result:
+Point total reverted to 55 and challenge 3 finish date set to erroneous date.
+Notes
+Thankfully, bonfire completion is not reset.
+Further detail:
+Firefox 35.0.1, Windows 7 32 bit
+https://drive.google.com/file/d/0B-94cRSEUQu_OWtObHc4Q3Eyamc/view?usp=sharing
+https://drive.google.com/file/d/0B-94cRSEUQu_NjFXQlNySWh0Uzg/view?usp=sharing",2015-02-23T19:50:35Z,1,2015-03-08T21:23:25Z,2
+freeCodeCamp/freeCodeCamp,121,test waffle issues,Testing waffle.io,2015-02-25T23:10:58Z,1,2015-02-25T23:11:54Z,0
+freeCodeCamp/freeCodeCamp,122,Email login to use LB-passport url,"Currently email login/signup is being done with a custome controller.
+The move to React requires all endpoints to be API's built using Loopback.js",2015-02-26T00:48:14Z,1,2015-03-02T02:56:26Z,0
+freeCodeCamp/freeCodeCamp,123,Create DB update script,Loopback-passport has it's own data structures for Users. A script will need to be created to update user profiles in production,2015-02-26T00:49:12Z,1,2015-06-20T07:57:02Z,1
+freeCodeCamp/freeCodeCamp,124,Use new /link routes for linking accounts,"Loopback.js differentiates between linking and login for passport strategies.
+Current linking needs to have links updated",2015-02-26T00:59:02Z,1,2015-03-08T21:25:30Z,2
+freeCodeCamp/freeCodeCamp,125,There should be certain rules for the chat room.,"The chat room sometimes go way out of the major CS topics. I am just suggesting that The FCC Administration should design an honor code or some rules to keep the discussion within the limitations of certain topics such as CS, Web dev etc.
+It'll be great and will make us more progressive.",2015-02-26T19:13:49Z,1,2015-02-26T19:16:31Z,2
+freeCodeCamp/freeCodeCamp,126,Get Gulpfile working with Loopback,,2015-02-26T19:59:55Z,1,2015-02-26T23:37:45Z,1
+freeCodeCamp/freeCodeCamp,127,Check queries for empty arrays since Loopback may return an empty array for find,,2015-02-26T20:07:45Z,1,2015-03-08T21:23:35Z,4
+freeCodeCamp/freeCodeCamp,129,refactor uncompletedBonfires and uncompletedCoursewares to reference a list external to the user object instead of storing on the user object,,2015-02-27T22:47:01Z,1,2015-02-28T01:12:24Z,0
+freeCodeCamp/freeCodeCamp,130,misaligned closing x on coursewares modal,,2015-02-28T00:34:57Z,1,2015-03-01T23:43:16Z,1
+freeCodeCamp/freeCodeCamp,131,add show all coursewares button to showVideo,,2015-02-28T00:46:55Z,1,2015-03-02T00:05:06Z,0
+freeCodeCamp/freeCodeCamp,132,Rename all coursewares 'challenges' and ensure old challenge infrastructure is removed,,2015-02-28T00:47:24Z,1,2015-03-14T21:52:42Z,22
+freeCodeCamp/freeCodeCamp,133,Ouath Login,Sessions are now supported but the User isn't being saved to the database.,2015-02-28T22:47:09Z,1,2015-03-01T09:26:13Z,1
+freeCodeCamp/freeCodeCamp,134,Migrate user.profile.username to user.username,,2015-03-01T07:17:02Z,1,2015-03-01T23:30:30Z,2
+freeCodeCamp/freeCodeCamp,135,Move to eslint,"Use eslint for a much cleaner codebase.
+Will need to agree upon styles.",2015-03-01T18:57:59Z,1,2015-03-02T01:24:47Z,0
+freeCodeCamp/freeCodeCamp,136,Automate user.image assignment,Currently the hack I've put together to set the image on the user only fires after the user navigates to their public profile and then refreshes. Probably refactor this from User.js to use a utility method to set it on initial save.,2015-03-01T23:22:24Z,1,2015-03-02T02:32:29Z,0
+freeCodeCamp/freeCodeCamp,137,Show all coursewares not showing the HTML and JS coursewares,,2015-03-02T00:05:30Z,1,2015-03-02T00:44:28Z,0
+freeCodeCamp/freeCodeCamp,138,Completion modals shouldn't use points anymore,,2015-03-02T00:08:45Z,1,2015-03-02T01:41:22Z,0
+freeCodeCamp/freeCodeCamp,139,Clean all lint errors,"Current state of app is horribly inconsistent. An eslint file and task has been added.
+All files created by this repository needed to be linted and corrected.
+To run lint task in the command line run npm run lint
+This should be done in the Reactify branch",2015-03-02T01:27:35Z,1,2015-03-04T12:19:16Z,5
+freeCodeCamp/freeCodeCamp,140,Add jsx/bundle task to gulp file,,2015-03-02T01:32:51Z,1,2015-03-02T05:26:13Z,0
+freeCodeCamp/freeCodeCamp,141,Browserify in gulpfile.js,"I've found the offending code that was causing it not to load. I've no idea why it's throwing the error it is.
+It's marked with a TODO",2015-03-02T11:02:43Z,1,2015-03-04T12:18:18Z,4
+freeCodeCamp/freeCodeCamp,142,Create the Post model,,2015-03-03T06:57:24Z,1,2015-03-05T05:47:44Z,0
+freeCodeCamp/freeCodeCamp,143,Create a Comment model,,2015-03-03T07:00:02Z,1,2015-03-05T05:47:42Z,0
+freeCodeCamp/freeCodeCamp,144,Profile glitch,"A minor glitch where an image of mine is showing up as the image of a profile that I'm viewing when that profile has no image.
+My screenshot: 
+Tyler's screenshot:",2015-03-04T03:28:51Z,1,2015-03-08T20:56:16Z,0
+freeCodeCamp/freeCodeCamp,145,Use Babel as our transpiler for reactify,"I've experimented with using babel to transform our jsx and it couldn't be easier.
+Including 'babelify' and using it as the argument to transform instead of envify works.
+I really think we should push for this as a transformer for all of our source files to allow use of es6.
+Thoughts?",2015-03-04T12:17:57Z,1,2015-03-10T03:37:01Z,5
+freeCodeCamp/freeCodeCamp,146,Use IO.js for es6 supercalifragilisticexpialidociousness,"@QuincyLarson @terakilobyte
+Use of IO.js would be awesome here as it would mean being able to use es6 features, newest version of Googles V8, and not to mention all the bug patches that come with that.
+The downside here would be for new users trying to learn by running the site here. This could potentially raise the barrier to use here. There are great options for switching between Node and IO.js(n and nvm both support switching), and All node scripts will run in IO.js (for the most part).
+@QuincyLarson I think this would be a great addition code-wise, but I understand one the reasons for this code base is to allow new Campers to play with the site. I just wanted to put it out there.
+What do the campers that contribute or want to contribute or may in the near future contribute think about it?
+@terakilobyte What do you think?",2015-03-05T04:33:42Z,1,2015-03-09T23:41:32Z,3
+freeCodeCamp/freeCodeCamp,147,Add meta-data scraping to news,We need to scrape the meta data from the links people provide in order to fill out data field which are being populated with dummy data for now.,2015-03-05T11:01:17Z,1,2015-03-09T22:30:57Z,1
+freeCodeCamp/freeCodeCamp,148,Comment system,"The pattern is pretty much established for news, but we need to add in submission of comments as well as figure out how to nest them.
+I spoke with quincy about this and I think a recursive algorithm is the best.
+Level of indent would be nest level, and we can also add an alternating background for different levels.
+Somethign like
+fetchComments(comments) {
+  if (!comments.length) {
+    return;
+  }
+
+  comment = comments.shift();
+  // display comment
+  return fetchComments(comments);
+}",2015-03-05T11:07:08Z,1,2015-03-06T19:58:10Z,0
+freeCodeCamp/freeCodeCamp,150,Show user rendering glitch,"There is a rendering glitch for scores greater or equal to 100 on the show user page.
+
+This could easily be resolved by removing the brackets and spaces in the score.
+
+Alternatively the star could be re-sized to fit the text, I found that changing .background-svg { width: 275px; height: 275px; } would accomplish that.
+
+Another option would be to reduce the font-size of the score, .points-on-top { font-size: 40px; }.",2015-03-06T18:50:45Z,1,2015-03-08T20:43:55Z,0
+freeCodeCamp/freeCodeCamp,151,Test issue,This is a test,2015-03-06T19:49:55Z,1,2015-03-06T19:57:46Z,0
+freeCodeCamp/freeCodeCamp,152,Add Issue Close Graph,We should display our issue close rate.,2015-03-06T22:07:07Z,1,2015-03-07T12:02:40Z,0
+freeCodeCamp/freeCodeCamp,154,Prevent submission of link a second time on Camper News,,2015-03-07T11:24:26Z,1,2015-03-08T03:30:42Z,1
+freeCodeCamp/freeCodeCamp,155,Clean up comment CSS,,2015-03-07T11:24:54Z,1,2015-03-08T20:32:20Z,0
+freeCodeCamp/freeCodeCamp,156,Update point system to include input from Camper News,,2015-03-07T11:40:24Z,1,2015-03-29T12:52:56Z,0
+freeCodeCamp/freeCodeCamp,157,Stylize Camper News for Release,,2015-03-07T11:59:55Z,1,2015-03-08T20:32:24Z,0
+freeCodeCamp/freeCodeCamp,158,"Clarification on ""Map the Debris"" Bonfire","Link to Bonfire
+
+By ""Sputkin"" do they mean ""Sputnik""? If it is really Sputnik, the Wikipedia article for Sputnik1 says that its semi-major axis was about 6500 km.
+What are the units involved? Looking at the test case for the Moon: {name: ""moon"", orbitalPeriod: 2377399}, if the Orbital Period is in seconds, then that is 2377399 / (60 * 24 * 60) = 27.52 days. If the GM constant provided by the problem is also in units of km^3/s^2 (as in Wikipedia), than this would be so. (EDIT: I left out an extra 7 in that calculation).
+
+If the purpose is to get the solver to use the Math object methods (PI, pow, etc.) and maybe the map method, it might be better to just provide an explicit formula, since I don't think I'm applying the information from Wikipedia correctly.",2015-03-07T21:53:51Z,1,2015-03-07T22:11:11Z,2
+freeCodeCamp/freeCodeCamp,159,Accessibility,"Create '/accessibility-help' url with information pertaining to those that are sight or hearing impaired.
+My recommendation is that this page provide additional information for those that use screen readers or require captioning on videos. We can go as in-depth or as basic as necessary.
+Dash Plaintext Transcriptions
+We can explain that the Dash challenges are presented as image slides (accessibility FAIL), but that our community has transcribed the slides for easier use in screen readers. link to Dash transcriptions
+We can also share that for any blind person needing extra assistance with the CSS challenges, that our community is more than willing to help by confirming the visual look or otherwise.\n\n##Did you find an accessibility issue?
+Offer the recommended action(s) to take when someone runs into an accessibility issue. Should the camper share this in one of the chat rooms, via Github issues, or email?
+
+Add list item to Challenge 0 that provides accessibility link for campers in need.
+This is the first message that openly welcomes everyone with accessibility challenges.
+
+Create page for all Dash challenges
+Right now these challenges have been shared with our one known blind camper via gists. I'm assuming there is a better way that we could present these. Any suggestions?
+
+Also, could the challenges that are still needed be added to the challenge pages as extra credit? It is a lot easier to type this text up as someone is taking the challenge, as opposed to spending 30 minutes to 1 hour typing otherwise (much of that time is spent clicking between slides and such). ESOComputing said it didn't add much time when she was doing it this way. *
+
+Dash Project 1: Build a Personal Website
+1.1 (still needed)
+1.2 (still needed)
+1.3 (still needed)
+1.4 (still needed)
+Dash Project 2: Build a Responsive Blog Theme
+
+2.1
+2.2 https://gist.github.com/P1xt/7f43cdd228f20fa205d4
+2.3 https://gist.github.com/P1xt/a6439c55fd9edac77ee1
+2.4 https://gist.github.com/P1xt/e80999c769fb8a3f0975
+
+Dash Project 3: Build a Small Business Website
+
+3.1 https://gist.github.com/brndnb/b35dcf1dbf5fc7a803f7
+3.2 https://gist.github.com/figitalboy/d51a0a85382c57725665
+3.3 (still needed)
+
+Dash Project 4: Build a CSS Robot
+
+4.1 (being transcribed)\n* 4.2 (being transcribed)
+4.3 (being transcribed)\n* 4.4 (being transcribed)
+
+Dash Project 5: Build a Madlibs Game
+
+5.1 https://gist.github.com/ESOComputing/103b465a1faf25ce05e1
+5.2 https://gist.github.com/ESOComputing/0150a0c2a028062ca8fc
+5.3 https://gist.github.com/ESOComputing/d1a7077599713971b7a1
+5.4 https://gist.github.com/ESOComputing/d912a7f847795d76ee03
+5.5 https://gist.github.com/ESOComputing/e473e52f311d968bfeee
+
+
+Make Challenge Checklist Accessible
+Currently, the button that lists all challenges is not accessible. The list itself is fine, but the mechanism of strikethrough on completed challenges does not show up on screen readers. Basically, all challenges ""look"" the same whether they have been completed or not.
+A quick bandaid for this would be to at least add challenge numbers to the user profiles page. Right now, challenges are listed without challenge number. If they are listed with number, a visually-impaired user could check for unfinished challenges by number and go to the challenge list to find them.
+Ideally, I think the challenge completion list needs to be a checkbox form.",2015-03-08T05:43:46Z,1,2015-03-29T23:32:29Z,0
+freeCodeCamp/freeCodeCamp,160,Incorporate ranking algorithm,,2015-03-08T10:46:50Z,1,2015-03-08T21:06:03Z,0
+freeCodeCamp/freeCodeCamp,162,Test Idea,,2015-03-08T21:17:34Z,1,2015-03-08T21:17:41Z,0
+freeCodeCamp/freeCodeCamp,163,Add 140 character limit to post reply comment,,2015-03-08T23:04:31Z,1,2015-03-09T00:33:36Z,0
+freeCodeCamp/freeCodeCamp,164,Awkard lack of vertical padding in comments,,2015-03-09T01:13:27Z,1,2015-03-09T02:48:32Z,1
+freeCodeCamp/freeCodeCamp,165,Update user posts on username change,,2015-03-09T02:48:25Z,1,2015-03-09T02:59:28Z,0
+freeCodeCamp/freeCodeCamp,170,Create Nonprofit Project Model,,2015-03-09T15:39:32Z,1,2015-03-30T00:05:29Z,0
+freeCodeCamp/freeCodeCamp,171,Create mechanism of Campers adding themselves to Nonprofit Projects,,2015-03-09T15:40:00Z,1,2015-04-15T06:29:13Z,0
+freeCodeCamp/freeCodeCamp,172,Create Nonprofit Project CMS,,2015-03-09T15:40:10Z,1,2015-04-15T06:29:09Z,0
+freeCodeCamp/freeCodeCamp,173,Update Nonprofit Project Form,,2015-03-09T15:40:27Z,1,2015-05-06T00:03:44Z,1
+freeCodeCamp/freeCodeCamp,174,Port existing nonprofit projects to create/edit/show/index,,2015-03-09T16:01:55Z,1,2015-03-29T22:25:32Z,0
+freeCodeCamp/freeCodeCamp,175,upvote button and reply button don't show pointer on mouseover,,2015-03-09T19:59:53Z,1,2015-03-10T05:46:00Z,0
+freeCodeCamp/freeCodeCamp,176,Style codemirror text area to match codemirror area,"On first render, camper see's an unstyled textarea.
+After, codemirror takes over and hides textarea and adds it's own box. This initial flash is hideous and makes puppies cry.",2015-03-09T20:18:59Z,1,2015-03-14T22:04:09Z,7
+freeCodeCamp/freeCodeCamp,179,Implement ThunderCats.js,In bonfires implement ThunderCats.js for flux,2015-03-09T22:45:53Z,1,2015-03-17T14:19:02Z,0
+freeCodeCamp/freeCodeCamp,181,Add error handling on new user validation and ajax end points,,2015-03-09T23:39:59Z,1,2015-03-10T06:10:41Z,1
+freeCodeCamp/freeCodeCamp,182,Gitter embed not working,"I'm not sure why but the gitter chat embed is not working. My only guess is that they prevent embeds, but I know very little about iframes so I don't know.
+
+I recommend removing it, or even considering replacing it with a simple proprietary chat.
+P.S., One is already available by us. :)",2015-03-10T08:23:59Z,1,2015-03-12T05:33:39Z,3
+freeCodeCamp/freeCodeCamp,183,Trello Link Dead,The link the public Trello board is dead on README.md,2015-03-10T19:45:23Z,1,2015-03-10T23:35:21Z,2
+freeCodeCamp/freeCodeCamp,185,R is not defined,"I try to submit my answer on http://www.freecodecamp.com/bonfires/check-for-palindromes and it gives me this error in the console to the left when I press Run Code:
+R is not defined
+
+Program Execution Failure No user tests were run.
+
+This happens on Chrome 41.0.2272.89, Safari 8.0 (10600.1.25.1), and the run button doesn't work on Firefox 35.0.1.",2015-03-11T00:03:45Z,1,2015-03-11T07:03:17Z,8
+freeCodeCamp/freeCodeCamp,186,Courseware showJS completion modal - Ctrl+Enter shortcut doesn't work,,2015-03-11T05:37:37Z,1,2015-03-12T08:00:18Z,3
+freeCodeCamp/freeCodeCamp,187,README references Trello instead of waffle.io,"When #183 was closed by updating the link from Trello to waffle.io the text of the next sentence wasn't updated on README.md
+
+If your issue or feature isn't on the board, either open an issue on this GitHub repo or message Quincy Larson to request to be added to the Trello board",2015-03-11T13:20:43Z,1,2015-03-12T07:16:57Z,2
+freeCodeCamp/freeCodeCamp,189,Quotation marks in camper news,Currently quotation marks aren't allowed.,2015-03-11T23:22:42Z,1,2015-03-12T06:06:35Z,0
+freeCodeCamp/freeCodeCamp,191,Application Error while accessing bonfires.,I receive this message and have heard that some others also receive such message.,2015-03-12T04:04:29Z,1,2015-03-12T04:38:48Z,1
+freeCodeCamp/freeCodeCamp,193,/challenges results in occasional 404 errors,https://twitter.com/gyaresu/status/576208410368192513,2015-03-13T08:52:29Z,1,2015-03-17T21:52:37Z,4
+freeCodeCamp/freeCodeCamp,194,After completing a challenge all points from bonefires are removed,,2015-03-13T21:51:23Z,1,2015-03-15T01:43:41Z,1
+freeCodeCamp/freeCodeCamp,195,.,deleted.,2015-03-13T21:59:25Z,1,2015-03-13T22:20:51Z,0
+freeCodeCamp/freeCodeCamp,196,Selecting text and tab indenting it,"I'm not sure how complicated this would be to implement, but it would be nice if users could select text in bonfire and hit tab to tab in all selected text. The current behavior is the tab overwrites all selected text.",2015-03-13T22:43:00Z,1,2015-03-14T21:53:05Z,2
+freeCodeCamp/freeCodeCamp,199,Issue with development server crash,,2015-03-14T07:52:18Z,1,2015-03-18T03:20:15Z,5
+freeCodeCamp/freeCodeCamp,202,Move from Compose.io to MongoLab,,2015-03-14T17:10:30Z,1,2015-04-15T06:51:59Z,2
+freeCodeCamp/freeCodeCamp,203,There should be a resource section where all sites that have been listed in challenges should be there in alphabetical order,"Regardless if the site was listed or mentioned in old course or recent. It should be there under the list with name, link, description/warnings etc.
+This will be very useful to beginners and returning users.",2015-03-14T17:17:52Z,1,2015-03-14T21:53:33Z,3
+freeCodeCamp/freeCodeCamp,205,Comment overflow in News.,"In Firefox 36.0.1 on OS X 10.9.5
+Link: http://www.freecodecamp.com/stories/watch-people-code-interviewed-me-we-discuss-twitch-tv-agile-and-terakilobytes-energy-",2015-03-15T08:55:25Z,1,2015-03-16T07:43:25Z,2
+freeCodeCamp/freeCodeCamp,206,Possible Memory Leak,Looking through Heroku logs we are getting a lot of R14 Memory errors.,2015-03-15T17:49:13Z,1,2015-05-22T18:46:38Z,6
+freeCodeCamp/freeCodeCamp,207,Feature: Board to find people to live pair with,"When someone is free and want to pair up to dual code they could go 'online'. They could either A)list what they were working on with 'tags' such as 'node', 'express', 'mongo', 'bonfires', etc so other people could see them or B) search/browse other people.
+I feel like this would help stimulate the community and provide a catalyst for learning",2015-03-16T06:55:53Z,1,2015-03-17T21:20:06Z,5
+freeCodeCamp/freeCodeCamp,209,Camper News doesn't show comments unless authenticated,,2015-03-17T00:07:08Z,1,2015-03-18T00:48:31Z,3
+freeCodeCamp/freeCodeCamp,210,Upvote button isn't sufficiently clear as to whether you've successfully upvoted an article,,2015-03-17T00:07:36Z,1,2015-03-17T23:16:31Z,1
+freeCodeCamp/freeCodeCamp,211,Camper News comments should be editable by their author for at least some duration of time,,2015-03-17T00:49:45Z,1,2015-04-20T02:26:16Z,16
+freeCodeCamp/freeCodeCamp,212,Bug with email login,"Creating a new account via email you can enter an email such as mrrenter@fake
+This should be checked for a .com/org/etc
+Also once this account is created it is bricked as well. If you log out of it you cannot log back in because the server says its not a valid email address. There is still an entry in the table
+Solution: Update the regex used for email validation",2015-03-17T02:52:40Z,1,2015-03-18T06:16:50Z,5
+freeCodeCamp/freeCodeCamp,213,User password hash in Stories,"The Stories area is including the user object on the page which is including the password hash:
+From stories/hot:
+<script>var challengeName = 'Camper News';
+var user = {""_id"":""5503ec8f58775dd01f72d4ce"",""email"":""test@test.test"",""password"":""$2a$05$GIGwNCnDHF5s5OeWTl2Zje4n6ZpicWkEWgTyWh7rF060gbFIMLaDS"",""__v"":2,""completedCoursewares"":[],""uncompletedCoursewares"":[],""completedBonfires"":[{""solution"":""function meetBonfire(argument) {\n  // Good luck!\n  console.log(\""you can read this function's argument in the developer tools\"", argument);\n\n  return true;\n}\n\n\n\nmeetBonfire(\""You can do this!\"");"",""completedDate"":1426320538,""completedWith"":null,""_id"":""ad7123c8c441eddfaeb5bdef""}],""uncompletedBonfires"":[""a202eed8fc186c8434cb6d61"",""a302f7aae1aa3152a5b413bc"",""aaa48de84e1ecc7c742e1124"",""a26cbbe9ad8655a977e1ceb5"",""ab6137d4e35944e21037b769"",""a789b3483989747d63b0e427"",""acda2fb1324d9b0fa741e6b5"",""afcc8d540bea9ea2669306b6"",""ac6993d51946422351508a41"",""a9bd25c716030ec90084d8a1"",""ab31c21b530c0dafa9e241ee"",""af2170cad53daa0770fabdea"",""adf08ec01beb4f99fc7a68f2"",""a8e512fbe388ac2f9198f0fa"",""a39963a4c10bc8b4d4f06d7e"",""a24c1a4622e3c05097f71d67"",""a3566b1109230028080c9345"",""a5de63ebea8dbee56860f4f2"",""af7588ade1100bde429baf20"",""a77dbc43c33f39daa4429b4f"",""a105e963526e7de52b219be9"",""a6b0bb188d873cb2c8729495"",""a103376db3ba46b2d50db289"",""a5229172f011153519423690"",""a3bfc1673c0526e06d3ac698"",""ae9defd7acaf69703ab432ea"",""a6e40f1041b06c996f7b2406"",""a5deed1811a43193f9f1c841"",""ab306dbdcc907c7ddfc30830"",""a8d97bd4c764e91f9d2bda01"",""a3f503de51cfab748ff001aa"",""a3f503de51cf954ede28891d"",""a10d2431ad0c6a099a4b8b52"",""a2f1d72d9b908d0bd72bb9f6"",""af4afb223120f7348cdfc9fd"",""aff0395860f5d3034dc0bfc9"",""aa2e6f85cab2ab736c9a9b24"",""a56138aff60341a09ed6c480"",""a7bf700cd123b9a54eef01d5""],""portfolio"":{""website3Image"":"""",""website3Title"":"""",""website3Link"":"""",""website2Image"":"""",""website2Title"":"""",""website2Link"":"""",""website1Image"":"""",""website1Title"":"""",""website1Link"":""""},""profile"":{""username"":""hello123"",""twitterHandle"":"""",""codepenProfile"":"""",""coderbyteProfile"":"""",""githubProfile"":"""",""linkedinProfile"":"""",""picture"":""https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png"",""location"":"""",""gender"":"""",""name"":""""},""challengesHash"":{""0"":1426320545,""1"":0,""2"":0,""3"":0,""4"":0,""5"":0,""6"":0,""7"":0,""8"":0,""9"":0,""10"":0,""11"":0,""12"":0,""13"":0,""14"":0,""15"":0,""16"":0,""17"":0,""18"":0,""19"":0,""20"":0,""21"":0,""22"":0,""23"":0,""24"":0,""25"":0,""26"":0,""27"":0,""28"":0,""29"":0,""30"":0,""31"":0,""32"":0,""33"":0,""34"":0,""35"":0,""36"":0,""37"":0,""38"":0,""39"":0,""40"":0,""41"":0,""42"":0,""43"":0,""44"":0,""45"":0,""46"":0,""47"":0,""48"":0,""49"":0,""50"":0,""51"":0,""52"":0,""53"":0,""54"":0,""55"":0,""56"":0,""57"":0,""58"":0,""59"":0},""challengesCompleted"":[{""0"":1426320545,""1"":0,""2"":0,""3"":0,""4"":0,""5"":0,""6"":0,""7"":0,""8"":0,""9"":0,""10"":0,""11"":0,""12"":0,""13"":0,""14"":0,""15"":0,""16"":0,""17"":0,""18"":0,""19"":0,""20"":0,""21"":0,""22"":0,""23"":0,""24"":0,""25"":0,""26"":0,""27"":0,""28"":0,""29"":0,""30"":0,""31"":0,""32"":0,""33"":0,""34"":0,""35"":0,""36"":0,""37"":0,""38"":0,""39"":0,""40"":0,""41"":0,""42"":0,""43"":0,""44"":0,""45"":0,""46"":0,""47"":0,""48"":0,""49"":0,""50"":0,""51"":0,""52"":0,""53"":0,""54"":0,""55"":0,""56"":0,""57"":0,""58"":0,""59"":0}],""points"":2,""tokens"":[]};
+var page = ""hot"";</script>",2015-03-17T05:20:02Z,1,2015-03-18T03:27:18Z,11
+freeCodeCamp/freeCodeCamp,216,Story replies messed up in Firefox?,"Does anyone else see replies floating to the right in Firefox (36.0.1) when clicking Reply to a story? http://i.imgur.com/Bm3grxC.png
+It looks correct in Chrome.
+If it's not just me then the fix is to add the ""row"" class to "".hidden-element#initial-comment-submit"" in views/stories/show.jade",2015-03-17T09:04:43Z,1,2015-03-17T23:35:12Z,3
+freeCodeCamp/freeCodeCamp,218,Design Flaw in Bonfires ,"When you click on Run Code in a Bonfire challenges with just the default code, it shows you all the tests that are run for that program and their expected output. This can be used to write a program that returns the expected output for all the tests and pass the challenge.
+I passed the No Repeats Please challenge by doing just this. Here is my code :
+function permAlone(str) {
+  if(str == 'aab')
+    return 2;
+  if(str == 'abcdefa')
+    return 3600;
+  if(str == 'abfdefa')
+    return 2640;
+  if(str == 'zzzzzzzz')
+    return 0;
+  if(str == 'aabb')
+    return 8;
+  if(str == 'aaa')
+    return 0;
+}
+
+
+My solution for this design flaw is, instead of giving away the expected output, we say something like ""Your code din't pass for this test"" and give just the input of the test and not the expected output.
+That way the user would not know what the expected outputs are and would not be able to pass the challenge like I did.",2015-03-17T20:53:05Z,1,2015-03-17T21:38:28Z,2
+freeCodeCamp/freeCodeCamp,219,Account page doesn't enforce unique username,Account page displays if a username is taken but doesn't enforce it server side when form is submitted.,2015-03-17T21:37:01Z,1,2015-03-17T22:42:33Z,1
+freeCodeCamp/freeCodeCamp,224,Unknown Windows/connect-mongo bug,"When running the gulp command, the browser launches and I get an error:
+
+500 Error: Error getting collection: sessions
+at \freecodecamp\node_modules\connect-mongo\lib\connect-mongo.js:160:19
+
+Refreshing ""fixes"" the problem. If gulp auto reloads the project it's also fine. If I rerun the ""gulp"" command the error happens again.
+What it looks like is happening is the browser is being launched before the following is actually ready:
+app.use(session({
+    resave: true,
+    saveUninitialized: true,
+    secret: secrets.sessionSecret,
+    store: new MongoStore({
+        url: secrets.db,
+        'auto_reconnect': true
+    })
+}));
+MongoStore has a callback and If I move the following code into it, the problem is fixed:
+/**
+ * Start Express server.
+ */
+app.listen(app.get('port'), function () {
+    console.log(
+        'FreeCodeCamp server listening on port %d in %s mode',
+        app.get('port'),
+        app.get('env')
+    );
+});",2015-03-18T03:12:05Z,1,2015-03-18T07:27:52Z,5
+freeCodeCamp/freeCodeCamp,228,loopback bonfire query returns different results client/server,,2015-03-19T02:43:37Z,1,2015-03-19T04:31:12Z,1
+freeCodeCamp/freeCodeCamp,229,Codemirror code input broken,,2015-03-19T02:44:06Z,1,2015-03-19T19:02:18Z,0
+freeCodeCamp/freeCodeCamp,230,Add tab/shift tab functionality to react codemirror,,2015-03-19T02:44:33Z,1,2015-03-19T19:59:32Z,0
+freeCodeCamp/freeCodeCamp,231,Update bonfire name url,"when a camper goes to bonfires/:bonfireName, a regex search is initiated to find the closest matching bonfire. The url needs to be updated when that bonfire is found during componentDidMount phase.",2015-03-19T05:19:50Z,1,2015-03-19T06:47:37Z,0
+freeCodeCamp/freeCodeCamp,232,bonfire more info button arrow needs to change,"when bonfire more info pane is open, icon arrow should change to arrow up.",2015-03-19T05:24:30Z,1,2015-08-18T05:49:09Z,3
+freeCodeCamp/freeCodeCamp,233,hide more info button when there is not more info,,2015-03-19T06:47:29Z,1,2015-03-19T07:06:59Z,2
+freeCodeCamp/freeCodeCamp,234,refactor footer,refactor footer to use react-bootstrap and map over array of urls/link name similar to navbar,2015-03-19T06:57:49Z,1,2015-07-31T21:25:55Z,1
+freeCodeCamp/freeCodeCamp,235,refactor boot files,refactor boot files to reduce down old controllers down into one react render script,2015-03-19T07:07:55Z,1,2015-07-31T21:26:05Z,1
+freeCodeCamp/freeCodeCamp,237,codemirror initial value should come from bonifre,,2015-03-19T19:02:41Z,1,2015-03-19T22:34:31Z,0
+freeCodeCamp/freeCodeCamp,238,Inability to login,"When I was logging in today, I know my username and password because I saved it but it keeps saying invalid. When I click on the reset password link it says: ""Password reset token is invalid or has expired."" every time. I know it is not me and I am wondering if something is wrong.",2015-03-19T20:54:26Z,1,2015-03-19T22:34:28Z,7
+freeCodeCamp/freeCodeCamp,239,unable to login,"I joined last night and everything was fine. Today I was unable to login using my email address. It said email not associated yet when I went to sign up again it said email address is already being used. something like that. That is true because I already signed up. Please help so I can log back in.
+email address: Daavid2077@gmail.com",2015-03-19T21:34:54Z,1,2015-03-19T22:04:37Z,4
+freeCodeCamp/freeCodeCamp,240,C-enter should test user code,,2015-03-19T22:47:02Z,1,2015-08-18T05:52:26Z,3
+freeCodeCamp/freeCodeCamp,241,Add code execute button,,2015-03-20T01:49:55Z,1,2015-03-20T19:17:36Z,2
+freeCodeCamp/freeCodeCamp,242,Add bonfire result output,,2015-03-20T01:50:38Z,1,2015-03-22T23:58:26Z,0
+freeCodeCamp/freeCodeCamp,245,going to `/bonfire` should find user's last completed bonfire and load next bonfire,,2015-03-21T17:56:29Z,1,2015-08-18T05:52:39Z,1
+freeCodeCamp/freeCodeCamp,246,symmetric-difference - inconsistent instructions,"The bonfire challenge states here:
+
+Create a function that takes two or more arrays and returns an array of the symmetric difference of the provided arrays.
+
+However, one of the test cases submits only 1 array as an argument.",2015-03-21T22:58:08Z,1,2015-04-15T07:13:38Z,2
+freeCodeCamp/freeCodeCamp,247,"Zipline model, view, controller",,2015-03-21T23:16:33Z,1,2015-03-30T00:05:15Z,1
+freeCodeCamp/freeCodeCamp,248,Creation of Github Repo,,2015-03-21T23:16:58Z,1,2015-03-22T07:27:29Z,0
+freeCodeCamp/freeCodeCamp,249,Seed file and seed task,,2015-03-21T23:17:50Z,1,2015-03-30T00:05:10Z,0
+freeCodeCamp/freeCodeCamp,250,"Standardize ""steps"", ""details"", ""description"" across modesl",,2015-03-22T00:17:29Z,1,2015-03-30T00:39:38Z,1
+freeCodeCamp/freeCodeCamp,251,Bonfire button should test user code,,2015-03-22T05:56:17Z,1,2015-03-22T05:57:37Z,0
+freeCodeCamp/freeCodeCamp,252,User code testing should happen in web worker,,2015-03-22T05:56:44Z,1,2015-08-18T05:52:20Z,0
+freeCodeCamp/freeCodeCamp,253,QA and catch outstanding issues with buttons and hotkeys,,2015-03-22T07:30:54Z,1,2015-03-22T09:10:03Z,0
+freeCodeCamp/freeCodeCamp,254,Streak on Cal-heatmap,,2015-03-22T10:37:36Z,1,2015-03-30T00:04:10Z,0
+freeCodeCamp/freeCodeCamp,255,Add MDN links to Bonfires,MDN links to appropriate Objects and methods that relate to the spirit of the bonfire would greatly increase learning.,2015-03-22T10:43:55Z,1,2015-03-29T22:23:35Z,2
+freeCodeCamp/freeCodeCamp,257,plugin(web worker) needs to call self.close() after completion,Jailed plugin created web workers but they are not properly being closed. This can be seen using chrome inspector. For every test a new webworker is created but they are never shutdown. These need to be cleaned up in the master branch.,2015-03-22T23:38:35Z,1,2015-03-22T23:57:46Z,0
+freeCodeCamp/freeCodeCamp,258,Handle uncaught expressions,"@QuincyLarson
+We need to add a process like foreverjs in production and handle uncaught exceptions. This will allow server to crash fast and restart. This is typically what people do.
+process.on('uncaughtException', function (err) {
+  console.error((new Date).toUTCString() + ' uncaughtException:', err.message)
+  console.error(err.stack)
+  process.exit(1)
+});",2015-03-23T01:21:57Z,1,2015-03-23T05:19:21Z,3
+freeCodeCamp/freeCodeCamp,259,"Clicking ""Reply"" in Camper News, when logged out, should bring up the login page.","Right now clicking ""reply"" does nothing while not logged in.",2015-03-23T16:47:54Z,1,2015-03-30T00:03:59Z,7
+freeCodeCamp/freeCodeCamp,260,posts to `/completed-challenge' are hanging as route handler never closes,https://github.com/FreeCodeCamp/freecodecamp/blob/d8bf99708d4288ca994f53c68a64affcbffafb2e/app.js#L460,2015-03-24T00:06:23Z,1,2015-03-24T00:18:26Z,1
+freeCodeCamp/freeCodeCamp,261,Error handlers needed,"These files need eror handling.
+Proper handling tips:
+
+end early
+use next as callback in express middleware
+If there are multiple asynchronous functions, such as database queries, they must either be nested or use promise chains to resolve, preferably promises.
+
+End Early
+Whenever an error exist in express middleware, the callback function should be ended by returning the callback call with err as the first argument. What does that mean?
+Down below is an example of what a proper error handling express route should look like. Notice how the function being passed into app.use method as the second argument has three parameters. This is a standard pattern in express to signify to express two things:
+
+this is handler is what is called a middleware
+if next, the callback for the route handler, is called by us, the camper-developer extraordinaire, with an argument, an error has occurred and needs to be handled by the error handler down the road.
+
+app.use('/some-end-point', function(req, res, next) {
+  // some really cool code happens here <<<<
+  // then an async call below. Notice the callback being passed into the save method
+  User.save(function (err) {
+    // the save method must call the database. Lots of things can go wrong here, so if the driver that connects to the database detects something bad it will call this function that we pass into it with the error it detects. We now need to be responsible campers and deal with this error.
+    if (err) {
+      // if we get to this point that means `err` exists and we need to end this function and call the callback.
+      return next(err);
+    }
+    // because of the return in the conditional above, if we reach the code below that means the database returned with no errors. Now we can proceed.
+   res.send('stuff happend, saved user, end of line');
+   // it is important to end the route handler in two ways. Either by calling `next` with or without an err argument. This will tell express to look for the next route handler. The other way is to send something down to the user using a `res` method. `res` here is short for response meaning the response to the user. Most of the time you will be using `res.render` but you could also call `res.end` to not send the user anything other than a message that says the request to the server has ended. 
+  });
+});
+Here are some files where errors are not properly being handled. If you would like to help out respond here with the file that you would like call dibs on.
+
+ controllers/bonfires
+ controllers/challenges (this one is easy)
+ controllers/courseware
+ controllers/story (on ice as there is a PR waiting to be merged)
+ controllers/user",2015-03-24T02:34:51Z,1,2015-04-06T16:24:59Z,4
+freeCodeCamp/freeCodeCamp,263,chai jquery should be used for jquery tests in coursewares,,2015-03-24T10:41:56Z,1,2015-03-24T10:43:24Z,0
+freeCodeCamp/freeCodeCamp,266,chunky-monkey test typo,"The bonfire chunky-monkey has a typo in one of the tests in which it says ""cthe"" instead of ""the""
+assert.deepEqual(chunk([0, 1, 2, 3, 4, 5], 4), [[0, 1, 2, 3], [4, 5]], 'should return cthe last chunk as remaining elements');",2015-03-24T19:54:41Z,1,2015-03-27T02:43:26Z,0
+freeCodeCamp/freeCodeCamp,269,Bonfire Challenges,"Bonfires show completely done, but not all points were accounted for. This could have stemmed from using Bonfires when it was first live and the bug at #53 and fixed in #55.
+I doubt this is a pervasive issue. It could just be isolated to me.",2015-03-27T12:59:48Z,1,2015-03-29T22:07:11Z,1
+freeCodeCamp/freeCodeCamp,270,Fresh install mongoose error?,"> node seed_data/seed.js
+
+
+##############################################################
+#
+#   !!! MONGOOSE WARNING !!!
+#
+#   This is an UNSTABLE release of Mongoose.
+#   Unstable releases are available for preview/testing only.
+#   DO NOT run this in production.
+#
+##############################################################
+
+E:\www\public_html\github\freecodecamp\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\base.js:246
+        throw message;
+              ^
+TypeError: Cannot read property 'length' of undefined
+    at processResults (E:\www\public_html\github\freecodecamp\node_modules\mongoose\node_modules\mongodb\lib\mongodb\db.js:1581:31)
+    at E:\www\public_html\github\freecodecamp\node_modules\mongoose\node_modules\mongodb\lib\mongodb\db.js:1619:20
+    at E:\www\public_html\github\freecodecamp\node_modules\mongoose\node_modules\mongodb\lib\mongodb\db.js:1157:7
+    at E:\www\public_html\github\freecodecamp\node_modules\mongoose\node_modules\mongodb\lib\mongodb\db.js:1890:9
+    at Server.Base._callHandler (E:\www\public_html\github\freecodecamp\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\base.js:448:41)
+    at E:\www\public_html\github\freecodecamp\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:481:18
+    at MongoReply.parseBody (E:\www\public_html\github\freecodecamp\node_modules\mongoose\node_modules\mongodb\lib\mongodb\responses\mongo_reply.js:68:5)
+    at null.<anonymous> (E:\www\public_html\github\freecodecamp\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:439:20)
+    at emit (events.js:107:17)
+    at null.<anonymous> (E:\www\public_html\github\freecodecamp\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:201:13)
+
+npm ERR! Windows_NT 6.1.7601
+npm ERR! argv ""E:\\Program Files\\nodejs\\\\node.exe"" ""E:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js"" ""install""
+npm ERR! node v0.12.0
+npm ERR! npm  v2.5.1
+npm ERR! code ELIFECYCLE
+npm ERR! freecodecamp@0.1.0 postinstall: `node seed_data/seed.js`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the freecodecamp@0.1.0 postinstall script 'node seed_data/seed.js'.
+npm ERR! This is most likely a problem with the freecodecamp package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node seed_data/seed.js
+npm ERR! You can get their info via:
+npm ERR!     npm owner ls freecodecamp
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     E:\www\public_html\github\freecodecamp\npm-debug.log
+
+Changing ""mongoose"": ""^3.8.19"", to ""mongoose"": ""^4.0.0"", in package.json fixed the error.",2015-03-28T02:13:31Z,1,2015-03-28T02:30:24Z,1
+freeCodeCamp/freeCodeCamp,274,Challenge 2 can't be completed,"Challenge 2 is currently redirecting to challenge 3
+exports.returnChallenge = function(req, res) {
+    var challengeNumber = parseInt(req.params.challengeNumber) || 0;
+    if (challengeNumber === 2) {
+        return res.redirect('../challenges/3');
+    }
+
+Due to this I am not able to mark this challenge as completed so the ""I'm done with all the challenges!"" button is not enabled.",2015-03-28T18:38:03Z,1,2015-03-29T22:04:18Z,0
+freeCodeCamp/freeCodeCamp,277,Courseware Change the Color of Text,"Using style=""color: red"" or style=""color: #ff0000"" on the h2 tag for the Change the Color of Text courseware will not give a passing test. I'm using Chrome on Mac.",2015-03-29T14:37:48Z,1,2015-04-15T06:44:34Z,3
+freeCodeCamp/freeCodeCamp,280,Update resources.json file,,2015-03-30T19:24:55Z,1,2015-03-30T20:52:10Z,1
+freeCodeCamp/freeCodeCamp,281,"Create a resources model, controller, template",,2015-03-30T19:25:10Z,1,2015-03-30T20:52:02Z,0
+freeCodeCamp/freeCodeCamp,282,Create dynamic named routes for resources,,2015-03-30T19:25:24Z,1,2015-03-30T20:52:56Z,0
+freeCodeCamp/freeCodeCamp,283,Camper News headlines should be unique since they're used as routes,,2015-03-30T19:28:57Z,1,2015-04-20T04:31:56Z,2
+freeCodeCamp/freeCodeCamp,284,Each Camper News comment load triggers its own server call,,2015-03-30T19:29:19Z,1,2015-04-17T03:42:40Z,3
+freeCodeCamp/freeCodeCamp,285,Move Bonfires into Coursewares,,2015-03-30T19:35:39Z,1,2015-04-14T15:28:07Z,1
+freeCodeCamp/freeCodeCamp,286,Move all wiki-worth articles over to Wiki,,2015-03-30T20:53:22Z,1,2015-03-30T23:05:02Z,0
+freeCodeCamp/freeCodeCamp,289,Break FAQ into individual Wiki pages,,2015-03-30T23:19:07Z,1,2015-03-31T00:52:34Z,0
+freeCodeCamp/freeCodeCamp,292,Should sign up email be moved to user.save callback?,"https://github.com/FreeCodeCamp/freecodecamp/blob/master/controllers/user.js#L161-L183
+If an error occurred on the user.save would it still send them an email welcoming them to the site?
+Still learning so I'm not totally sure.",2015-03-31T04:35:17Z,1,2015-03-31T23:03:22Z,2
+freeCodeCamp/freeCodeCamp,293,Seek & Destroy Instructions Unclear,"source: http://www.freecodecamp.com/bonfires/seek-and-destroy
+Currently Reads: ""Remove all values (last argument(s)) from an array (first argument) and return as a new array.""
+Issue: From my understanding, the user is all the values from an array. However, the information in the parentheses (e.g ""last argument(s) and ""first argument"") seem confusing. Can you please ellaborate further?",2015-03-31T17:02:54Z,1,2015-04-15T08:04:53Z,3
+freeCodeCamp/freeCodeCamp,295,"Linkedin authentication isn't validating existing emails properly,",,2015-03-31T22:28:18Z,1,2015-04-18T02:28:53Z,0
+freeCodeCamp/freeCodeCamp,297,Courseware Color a Bootstrap Button with Button Primary worded incorrectly  ,"Instructions are the same for the btn-block course: ""Add Bootstrap's btn-block class to both of your buttons.""",2015-04-05T17:23:18Z,1,2015-04-15T06:36:29Z,1
+freeCodeCamp/freeCodeCamp,300,Decreasing Points Total,"My challenges total reset from 80 to 54! When I clicked on take me to my next challenge (all of which I've completed) it showed me the git challenge. I figured it was a glitch so hit ""completed"" and my number reset/recalculated and it took me to node, which I've also completed. It looks like the total is now only counting the challenges, but not the adding points from teh bonfires. It does correctly take me to my next bonfire. I just wanted to pass that along in case the total count is a bug, or if it's doing what it's supposed to do. I liked seeing the nubmer go up with each bonfire I completed.",2015-04-08T15:48:41Z,1,2015-04-15T06:34:10Z,4
+freeCodeCamp/freeCodeCamp,301,Cannot access FCC from certain WiFi location,"I get this error when accessing FCC from my favorite coffee shop where I like to work. i have not seen this on any other site I visit:
+Response denied by WatchGuard HTTP proxy.
+
+Reason: header-line too large line='Content-Security-Policy: default-src 'self' *.freecodecamp.com *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.rafflecopter.com *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.togetherjs.com https://*.togetherjs.com wss://hub.togetherjs.com *.ytimg.com wss://fcctogether.herokuapp.com *.bitly.com;script-src *.optimizely.com *.aspnetcdn.com 'self' *.freecodecamp.com *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.rafflecopter.com *.bootstrapcdn.com *.cloudflare.com https://*.cloudfl' 
+Method: GET 
+Host: www.freecodecamp.com 
+Path: /",2015-04-08T17:17:43Z,1,2015-04-12T23:42:05Z,1
+freeCodeCamp/freeCodeCamp,302,"If a camper has completed all Waypoints, but not all Bonfires, root should redirect to /bonfires/ instead",,2015-04-08T19:16:35Z,1,2015-04-25T05:53:32Z,0
+freeCodeCamp/freeCodeCamp,304,Add checklist type interface to challenge steps,"@storbeck pointed out that for some of the longer challenges like the basejumps it might be nice to have all of the steps already laid out but where you can click a checkbox and it would become crossed out, like on a Trello card checklist.",2015-04-09T06:00:39Z,1,2015-04-15T06:48:44Z,0
+freeCodeCamp/freeCodeCamp,305,Test slack integration issue,Testing slack integration,2015-04-09T22:15:53Z,1,2015-04-09T22:16:02Z,0
+freeCodeCamp/freeCodeCamp,306,"""Pairwise"" Bonfire wording issue","I tried copy and paste the responses from other two coders and still I havent got the message that the solution was correct
+rcidaleassumpo [4:04 AM]
+https://gist.github.com/aldraco/7359b92f203a59900cc9
+rcidaleassumpo [4:04 AM]
+https://gitter.im/FreeCodeCamp/LetsPair/archives/2015/03/02
+rcidaleassumpo [4:04 AM]
+from this two places.
+rcidaleassumpo [4:05 AM]
+I really don't like to use other people code but I honestly could understand what this challenge wants.
+rcidaleassumpo [4:05 AM]
+If you could help me or something, I would appreciate 😉
+rcidaleassumpo [4:05 AM]
+Also I asked for help on the chat ,
+rcidaleassumpo [4:06 AM]
+and Geoff Storbeck response didn't help, because he said the same thing that the exercise says.
+rcidaleassumpo [4:06 AM]4:06
+Geoff Storbeck 3:47 AM, Apr 10th
+@rcidaleassumpo: create a pair of 2 in the array that equal the solo number, then remove them from the array and don’t reuse them
+rcidaleassumpo [4:07 AM]
+If I use this logic, the tests don't match.
+rcidaleassumpo [4:08 AM]
+And since with the bonfires you have to solve one problem at a time, you can't skip, I'm currently stuck",2015-04-10T22:05:13Z,1,2015-04-13T05:49:24Z,0
+freeCodeCamp/freeCodeCamp,307,Adopt a styleguide,"With more contributors we need a style guide to adhere to.
+I personally vote for https://github.com/airbnb/javascript as it is sensible, with the addition of specifying a limit of either 80 or 120 characters per line maximum.",2015-04-14T15:42:50Z,1,2015-04-19T05:38:56Z,4
+freeCodeCamp/freeCodeCamp,308,ChallengeMap should be an ajax-powered modal instead of a view,,2015-04-15T03:17:53Z,1,2015-04-15T06:29:51Z,1
+freeCodeCamp/freeCodeCamp,309,Add relevant Hack Design lessons to individual Ziplines,,2015-04-15T03:45:49Z,1,2015-04-17T03:44:32Z,1
+freeCodeCamp/freeCodeCamp,312,Enable XMPP and IRC gateways on Slack,Slack accessibility options need to be turned on manually. See @zersiax for more.,2015-04-15T21:14:26Z,1,2015-04-25T06:09:33Z,2
+freeCodeCamp/freeCodeCamp,313,Create production branch,,2015-04-15T22:15:25Z,1,2015-04-16T00:17:18Z,0
+freeCodeCamp/freeCodeCamp,314,Merge UX-improvements and nonprofit-show into master,,2015-04-15T22:15:44Z,1,2015-04-17T07:19:51Z,0
+freeCodeCamp/freeCodeCamp,315,grab ESLint file from reactify,,2015-04-15T22:15:53Z,1,2015-04-17T03:42:45Z,0
+freeCodeCamp/freeCodeCamp,316,Create gulp task that throws warnings for ESLint violations,,2015-04-15T22:16:09Z,1,2015-04-17T03:44:49Z,0
+freeCodeCamp/freeCodeCamp,317,login,"When logging in using an email address, the email input field seems to be case sensitive.",2015-04-16T14:59:35Z,1,2015-04-16T15:18:20Z,2
+freeCodeCamp/freeCodeCamp,321,Username LMWBXR can only log after resetting password,,2015-04-17T07:19:34Z,1,2015-05-23T22:30:45Z,1
+freeCodeCamp/freeCodeCamp,323,dependency on fbgraph is missing,"When the controllers/api.js file is used (which it seems not to be in normal use of the app) there is a missing dependency on fbgraph. it's not in the package.json.
+line 8 in controllers/api.js
+used in the getFacebook call.
+Also node-linkedin and twit.
+This may shed light on issue #295 where linkedin emails aren't sending.",2015-04-17T17:53:05Z,1,2015-04-18T02:20:51Z,1
+freeCodeCamp/freeCodeCamp,324,Seed data bug in ux-improvements for start-a-node.js-server challenge,"In the ux-improvements branch:
+Looks like the /challenges/start-a-node.js-server route is going to the MongoDB challenge instead of whetever node challenge it should be going to.
+Looks like this is an issue with the seed data here:
+https://github.com/FreeCodeCamp/freecodecamp/blob/ux-improvements/seed_data/coursewares.json#L517-528",2015-04-17T20:42:03Z,1,2015-04-18T02:20:54Z,2
+freeCodeCamp/freeCodeCamp,325,Control+enter doesn't advance challenges,,2015-04-18T00:45:38Z,1,2015-04-18T02:09:22Z,0
+freeCodeCamp/freeCodeCamp,326,Streak heatmap doesn't always show up,"Sometimes d3 won't load in time, and is a dependency of the cal-heatmap library.",2015-04-18T02:10:08Z,1,2015-04-23T22:26:32Z,0
+freeCodeCamp/freeCodeCamp,327,I can post a story/comment as another user,Its known we pass the User object with each page. Well when we do something like submit a story or comment we pass that same user object back to the server and use that when saving to the db. If before I hit submit I edit the values used I can appear as a different user. I dont believe these are sanitized either meaning I could probably do something naughty. Here is an example as me posing as quincy. http://www.freecodecamp.com/stories/what-is-the-xy-problem-meta-stack-exchange,2015-04-18T03:18:26Z,1,2015-04-20T01:44:47Z,1
+freeCodeCamp/freeCodeCamp,329,Challenge Syllabus,"The Challenges are great because they take an inexperienced developer, such as myself, through various courses in a cohesive and chronological order.
+To help assist with understanding the ""Challenges"" course structure, can we have some high-level overview/syllabus that will show which courses/materials are covered in the challenges? Furthermore, this will help me, and other new Campers, gauge their progress.",2015-04-19T19:12:27Z,1,2015-04-20T01:47:28Z,1
+freeCodeCamp/freeCodeCamp,330,Add FCC progress title to users,,2015-04-20T00:26:55Z,1,2015-04-25T06:02:55Z,1
+freeCodeCamp/freeCodeCamp,331,Add gist exporting from bonfire solutions.,,2015-04-20T01:47:01Z,1,2015-04-26T02:05:48Z,1
+freeCodeCamp/freeCodeCamp,332,Format and prettify bonfire solutions on portfolio page,Right now bonfire solutions render as unformatted text.  Would be cool to format and prettify the code.  I'm working on it.,2015-04-20T06:56:48Z,1,2015-04-24T03:24:34Z,2
+freeCodeCamp/freeCodeCamp,333,Update bonfire Instructions and Help Text,I'd like to spend some time adding more helptext and instructions to bonfires.,2015-04-20T12:37:21Z,1,2015-04-24T23:26:18Z,0
+freeCodeCamp/freeCodeCamp,334,Update the MongoDB challenge.,"http://try.mongodb.org/ now redirects to https://university.mongodb.com.
+Very cool new courseware, but a seven week class for learning MongoDB might be overkill for FCC students.",2015-04-20T22:38:41Z,1,2015-04-23T21:09:56Z,1
+freeCodeCamp/freeCodeCamp,336,Suggestions for Make a Person Bonfire,"Make tests more friendly. Until you write the six functions you don't even get to see any tests. All you see is something like:
+bob.setFullName is not a function. Program Execution Failure. No user tests were run.
+Rewrite the spec to be more exact. For example, you don't know the arity of setFullName. Is it one parameter or two? Turns out it's one. I think little things like that will just slow people down.",2015-04-21T18:24:34Z,1,2015-04-25T05:53:30Z,1
+freeCodeCamp/freeCodeCamp,337,Suggestions for Symmetric Difference Bonfire,"Specify unambiguously that the symmetric difference of a variable number of arrays is meant to be done reduce-style: do a symmetric difference of the first two arrays, then do an SD of the result of first SD with the third array, etc. Right now it's hard to figure out why tests work the way they do.",2015-04-21T18:31:21Z,1,2015-04-24T02:57:37Z,1
+freeCodeCamp/freeCodeCamp,340,"Field Guide appearance should match ""Map"" appearance","in the recent release (todays)  the Map looks great, very organized and easy to see.  The field guide requires a popup to see other articles.  It would look good if it matched the layout of the ""Map"" page.",2015-04-22T23:55:00Z,1,2015-04-25T05:56:17Z,1
+freeCodeCamp/freeCodeCamp,341,Homepage redirects to latest challenge,When logged in I find this behavior odd...I think it would be better to redirect to the map or to another dashboard type page for logged in accounts.,2015-04-22T23:55:42Z,1,2015-04-25T05:53:34Z,2
+freeCodeCamp/freeCodeCamp,342,"""You can contribute to our field guide here"" Page Not Found",http://puu.sh/ho2Cv/dc8408526a.png,2015-04-23T14:23:21Z,1,2015-04-24T02:57:20Z,1
+freeCodeCamp/freeCodeCamp,343,Edit zipline instructions,"Some of the instructions have duplicate information (e.g. link to twitch API), others have broken links.",2015-04-23T14:29:40Z,1,2015-04-25T05:53:14Z,4
+freeCodeCamp/freeCodeCamp,344,"Embed not working on ""Start a node server""","Looks like the video embed address is bad:
+http://www.freecodecamp.com/challenges/start-a-node.js-server",2015-04-23T15:23:30Z,1,2015-04-23T23:07:07Z,0
+freeCodeCamp/freeCodeCamp,345,"Embed not working on ""Manage Packages with NPM""","Video embed seems bad:
+http://www.freecodecamp.com/challenges/manage-packages-with-npm",2015-04-23T16:19:42Z,1,2015-04-23T23:07:02Z,0
+freeCodeCamp/freeCodeCamp,346,Can't login `ERR_TOO_MANY_REDIRECTS`,"I had created the account long back when FreeCodeCamp still used Gitter. Now, I was motivated to complete some challenges today, but I just can't login due to ERR_TOO_MANY_REDIRECTS. I tried on Chrome, Chromium, Firefox & Safari. I tried the solution suggested by Chrome/Chromium but to no avail.",2015-04-23T16:49:59Z,1,2015-04-28T19:08:10Z,5
+freeCodeCamp/freeCodeCamp,347,"Embed not working on ""Build Web Apps with Express""",http://www.freecodecamp.com/challenges/build-web-apps-with-express.js,2015-04-23T18:56:54Z,1,2015-04-23T23:06:56Z,1
+freeCodeCamp/freeCodeCamp,348,Longest/Current Streak Not Displaying Correct Values,"I checked 3 accts: my own, terakilobyte's, and crisberrios'.  All three are showing the same value for both the longest streak and the current streak.  While this may occur in practice, my current streak should be 2, not 12.  Furthermore, my longest streak should be 8 not 12.",2015-04-23T19:19:31Z,1,2015-05-05T23:45:25Z,0
+freeCodeCamp/freeCodeCamp,349,Zipline Copy Typo,"In http://www.freecodecamp.com/challenges/zipline:-use-the-twitch.tv-json-api,
+#6: As a user, I can see the whether Free Code Camp is currently streaming on Twitch.tv.
+Should be:
+#6: As a user, I can see whether Free Code Camp is currently streaming on Twitch.tv.
+I'll send a pull request.",2015-04-23T20:29:56Z,1,2015-04-23T23:05:25Z,0
+freeCodeCamp/freeCodeCamp,352,Email notification Camper News,"The email notification that the user receives upon a new comment on one of his stories on Camper News is a little off. Here's what's wrong:
+
+The author of the comment is not the actual author but the user itself. Basically it's saying that you've replied to your own post.
+The link to the particular story is broken.
+Email gets sent out to both the comment author and story author although it's specifically addressing the story author. Either change the email content or send the email to the story author only.
+
+I'd be happy to issue a PR if you agree with the above. Point 3 needs clarification.",2015-04-23T21:39:04Z,1,2015-04-26T02:01:53Z,2
+freeCodeCamp/freeCodeCamp,353,Control+enter in modal should advance to next challenge,This isn't working in showVideo or showZiplineOrBasejump,2015-04-23T22:50:04Z,1,2015-04-24T02:56:56Z,0
+freeCodeCamp/freeCodeCamp,356,"Add ""Compare Bonfire Solutions"" Button to Profile Page","Discussed this with @terakilobyte.  The feature would works as so:
+
+""Compare Bonfire Solutions"" button would be added to the profile page
+What a user clicks that button, a modal comes up with a list of bonfire names that the user viewing the profile and that user whose profile is being displayed have both solved (this prevents cheating)
+When the user clicks on a bonfire name, the prettified solution written by the user in the profile is displayed
+
+I'll be submitting a PR eventually...",2015-04-24T03:18:07Z,1,2015-08-11T16:06:18Z,9
+freeCodeCamp/freeCodeCamp,358,"Cannot pass ""what's in query"" in Build Web Apps with Express.js(expressworks exercise)","The challenge is to ""Write a route that extracts data from query string in the GET '/search' URL
+route, e.g. ?results=recent&include_tabs=true and then outputs it back to
+the user in JSON format.""
+After failing a few times, I looked up the solution.  Using this solution does not allow the test to pass:
+            ACTUAL                                 EXPECTED                
+
+────────────────────────────────────────────────────────────────────────────────
+""{""                                 !=    ""{""results"":""recent"",""type"":""quote"",""page"":""0""}""
+""  ""type"": ""quote"",""            !=
+""  ""page"": ""0"",""                !=
+""  ""proto"": {}""               !=
+""}""                                 !=
+────────────────────────────────────────────────────────────────────────────────
+Oddly, when console.logging the same program, my result is this:
+{ results: 'recent', type: 'quote', page: '9', [proto]: {} }",2015-04-24T13:17:18Z,1,2015-04-24T20:00:16Z,3
+freeCodeCamp/freeCodeCamp,361,Remove CSS/JS minification infrastructure,"This crashed last night, and makes our js and css unreadable in the browser. It's not worth it for the marginal performance gains.",2015-04-24T20:53:45Z,1,2015-05-05T19:13:50Z,4
+freeCodeCamp/freeCodeCamp,365,Store Bonfire solutions with whitespace and line breaks,In order to present bonfire solutions in readable ways (like gists or in modals) we need to also retain the whitespace and line breaks.,2015-04-25T06:12:26Z,1,2015-04-25T06:30:20Z,1
+freeCodeCamp/freeCodeCamp,366,prevent symbols from being inputed on story headlines,Someone put an emoticon in a story and it made the discussion page inaccessible.,2015-04-25T08:31:59Z,1,2015-04-26T02:01:57Z,0
+freeCodeCamp/freeCodeCamp,367,Field Guide doesn't work,"Completed Field Guides array has been cleared (filled with only first Field Guide id). User can show all Field Guides but can't complete any of them.
+if (data.completedFieldGuides.indexOf(data.fieldGuideIds[i]) > -1) {
+will always return -1 because data.fieldGuideIds[i]._id should be used.
+After clicking 'Next Field Guide' button no Post request is fired to mark field guide as completed.",2015-04-25T09:36:25Z,1,2015-04-26T02:01:55Z,1
+freeCodeCamp/freeCodeCamp,370,Start a node server challenge displaying mongoDB video,"Noticed that the start a node server challenge is displaying mongoDB video instead of a start a node server video.
+http://www.freecodecamp.com/challenges/start-a-node.js-server",2015-04-26T19:08:57Z,1,2015-04-30T19:04:52Z,0
+freeCodeCamp/freeCodeCamp,371,Field Guide non-profit form link needs to be udpated,"http://www.freecodecamp.com/field-guide/nonprofit-project-instructions
+The link to the google form in this guide needs to be updated (currently ""discontinued)",2015-04-27T05:29:50Z,1,2015-05-02T06:23:06Z,0
+freeCodeCamp/freeCodeCamp,372,The Nodeschool field guide page looks like a challenge page,"And could be confusing for new campers, and seems redundant.  perhaps it can be removed altogether or consolidated?
+http://www.freecodecamp.com/field-guide/nodeschool-challenges
+In addition, not all 5 of those nodeschool courses are in the challenge map (that I could find right now)",2015-04-27T05:31:14Z,1,2015-04-28T00:34:32Z,1
+freeCodeCamp/freeCodeCamp,374,"Missing MDN links in ""Diff Two Arrays"" Bonfire challenge","There were no MDN references in the following challenge:
+http://www.freecodecamp.com/bonfires/diff-two-arrays",2015-04-27T16:22:11Z,1,2015-05-22T18:47:26Z,0
+freeCodeCamp/freeCodeCamp,375,"Recommend adding ""curry"" link to resources on ""Arguments Optional"" bonfire","Great bonfire!  I'd never heard of currying until I asked how to start this bonfire on slack and @storbeck told me to google ""javascript currying"".  I did and got the concept right away.  The following link got me up to speed, recommend putting it in the bonfire or a hint to ""look up currying"", so campers will have something to go off of - unfortunately the 2 links provided didn't seem to show anything to that effect(they sent me down the rabbit hole of function.arguments, function.bind, etc., and a lot of frustration).
+http://www.crockford.com/javascript/www_svendtofte_com/code/curried_javascript/index.html",2015-04-27T17:03:06Z,1,2015-05-02T06:27:25Z,3
+freeCodeCamp/freeCodeCamp,376,Konami Code,Hide an easter egg somewhere within fcc that is activated by the Konami Code (up up down down left right left right a b enter).,2015-04-27T19:39:16Z,1,2015-05-23T23:31:59Z,3
+freeCodeCamp/freeCodeCamp,379,Implement Amazon SNS for email campaign,,2015-04-28T00:32:15Z,1,2015-04-30T19:18:04Z,2
+freeCodeCamp/freeCodeCamp,380,Internationalization library for Russian,,2015-04-28T00:32:31Z,1,2015-05-12T07:07:07Z,1
+freeCodeCamp/freeCodeCamp,381,Automated database dumps to s3,,2015-04-28T00:32:52Z,1,2015-05-05T19:14:50Z,3
+freeCodeCamp/freeCodeCamp,382,Internationalization Library for Spanish,,2015-04-28T00:51:17Z,1,2015-05-12T07:06:56Z,1
+freeCodeCamp/freeCodeCamp,383,ctrl + enter doesn't work on Chromium,"I'm on Chromium + Linux + a Chromebook.
+EDIT: Version 41.0.2272.76 Ubuntu 14.04 (64-bit) is where this isn't working for me.
+Okay, I've tested this out in Firefox and it does work.  So, it appears to be a Chromium (and almost certainly Chrome) browser issue.",2015-04-28T03:18:03Z,1,2015-05-04T05:36:19Z,9
+freeCodeCamp/freeCodeCamp,384,Local Weather App throws TypeError,I'm trying the Local Weather App demo and it doesn't work for me. Console displays a TypeError. Do you know what that might be about?,2015-04-28T16:55:37Z,1,2015-05-02T18:18:42Z,23
+freeCodeCamp/freeCodeCamp,385,Production errors firing twice in Keymetrics,https://www.evernote.com/shard/s116/sh/9a7b3142-1db2-4de7-a402-0230a41f1a60/2f0185efc68fc12da15dce8e9fe911ca/deep/0/Audience-Overview---Google-Analytics.png,2015-04-28T18:03:58Z,1,2015-05-01T21:29:29Z,1
+freeCodeCamp/freeCodeCamp,386,Completing challenge doesn't always add points,https://www.evernote.com/shard/s116/sh/da3618a6-21de-4753-904b-0e19248b0193/23328d4a883490f40bfed93456ae2ec8/deep/0/A-map-of-all-Free-Code-Camp's-Challenges---Free-Code-Camp.png,2015-04-28T19:44:38Z,1,2015-05-23T23:31:20Z,0
+freeCodeCamp/freeCodeCamp,387,Field Guide Article no15 content error,"In Field Guide, when I go to article no15 (about register), I have some content of article no14 displayed (about control shortcuts).",2015-04-29T00:13:32Z,1,2015-04-30T16:10:18Z,0
+freeCodeCamp/freeCodeCamp,388,Replace CodeCademy Angular courses with CodeSchool 'Shaping Up With AngularJS',"The CodeCademy Angular courses, which are lessons 35-38 on the Waypoints track, are confusing and not great illustrations of Angular's inner workings. Most of the projects included within the lessons are simple checklists with very unclear instructions that throw jargon around that isn't properly explained. It also barely explains what MVC frameworks are, something very important for learning why to use Angular.
+I suggest replacing the lessons with the similar (and similarly free) Angular offering from CodeSchool called 'Shaping Up With Angular.js'. This is a much more step-by-step walkthrough of Angular that shows in detail how to use Angular to build a very nice app.",2015-04-29T03:02:24Z,1,2015-04-29T12:49:16Z,5
+freeCodeCamp/freeCodeCamp,391,Typo on Nonprofit Detail Page,"http://puu.sh/hvbeQ/fdf480a022.png
+""Nonprofits Projects""",2015-04-29T15:33:25Z,1,2015-04-30T19:03:10Z,0
+freeCodeCamp/freeCodeCamp,392,Zipline: Use the twitch.tv JSON API,"This one has the same video as the introductory video for ziplines - ""Get set for ziplines"", instead of one outlining the twitch.tv project.",2015-04-29T16:20:39Z,1,2015-05-05T19:14:41Z,0
+freeCodeCamp/freeCodeCamp,394,Duplicate Article in the Field Guide,15 is a duplicate of 14.,2015-04-29T19:30:36Z,1,2015-05-01T21:28:05Z,0
+freeCodeCamp/freeCodeCamp,396,Redirects to Bonfires when you pass a waypoint. ,"I have some Waypoints left to do, after the curriculum was updated. And I have done most of the Bonfires. Now when I click on ""I've completed this challenge"" for a Waypoint, the site goes to the next Bonfire that I have not completed, instead of redirecting to the next waypoint that I have not completed.",2015-04-30T11:34:49Z,1,2015-04-30T19:02:41Z,5
+freeCodeCamp/freeCodeCamp,397,Inconsistent dasherization,"First: the zipline title Zipline: Stylize Stories on Camper News dasherizes as zipline:-stylize-stories-on-camper-news. Note the dash after colon. However the story on camper news AppMachine: Make an app within hours. - AppMachine dasherizes as appmachine-make-an-app-within-hours--appmachine. No dash after colon and a confusing double-dash at the end, which brings us to...
+Second: one of the requirements of the zipline is to make a link to the story discussion page. In the json that http://www.freecodecamp.com/stories/hotStories returns there is a property storyLink and for the AppMachine story the value is appmachine make an app within hours appmachine.  If I were to turn all spaces into dashes I would get appmachine-make-an-app-within-hours-appmachine, which is incorrect (remember the double-dash?).
+I think the only way to link back to the page from json is to dasherize the headline, which is more difficult to do and probably not intended (otherwise, why include storyLink?)
+What do you think the proper dasherization algorithm is? Maybe we should just delete all punctuation, trim the string and replace all whitespace with single dashes?",2015-04-30T13:44:04Z,1,2015-05-26T07:37:06Z,2
+freeCodeCamp/freeCodeCamp,398,"Basejump Typo: ""Build a Pintrest Clone""",Should be Pinterest. Don't ask me how I know that.,2015-04-30T14:23:38Z,1,2015-05-05T19:14:02Z,0
+freeCodeCamp/freeCodeCamp,399,Notify unauthenticated user when trying in vane to upvote something,,2015-04-30T15:52:10Z,1,2015-05-05T19:13:58Z,0
+freeCodeCamp/freeCodeCamp,400,Bonfire Descriptions,"Smallest Common Multiple:
+""Find the smallest number that evenly divides all numbers in the provided range.""
+It should read ""Find the smallest number that is evenly divided by all numbers in the provided range."" I believe. Otherwise, the answer would always be 1.",2015-04-30T16:47:47Z,1,2015-05-01T14:55:17Z,5
+freeCodeCamp/freeCodeCamp,404,Twitter share button has no functionality after completing Bonfire exercise,"Issue occurs when completing a task and being displayed 'complete-bonfire-dialog' element. When clicking the button to tweet accomplishment, tweet is not posted and there is no visual feedback.
+So far I've only experienced this problem in the Bonfire exercises.",2015-05-01T11:51:02Z,1,2015-05-01T21:28:19Z,0
+freeCodeCamp/freeCodeCamp,408,Add link to original exercises on a user's profile,"It would be really helpful for each bonfire solution on a user's profile to include a link to the original exercise, esp. for non-FCC users.",2015-05-02T05:09:27Z,1,2015-05-05T19:14:12Z,1
+freeCodeCamp/freeCodeCamp,409,Mobile Camper News doesn't show headline,,2015-05-02T06:27:54Z,1,2015-05-05T19:14:05Z,0
+freeCodeCamp/freeCodeCamp,410,Tests in Friendly Date Ranges Bonfire ,"One of the tests for that bonfire is : friendly(['2016-03-01', '2016-05-05']), which is supposed to give  : ['March 1st','May 5th, 2016'].
+And another test is the same bonfire is : friendly(['2015-12-01', '2016-02-03']), which is supposed to give :
+['December 1st','February 3rd'].
+This doesn't make sense. If it can be inferred, based on the difference being one month apart, that it's the next year, for the second case, then it should also be possible for the first case too. March and May are one month apart, so the output should be ['March 1st','May 5th'] just like the second case.",2015-05-02T09:22:44Z,1,2015-08-03T23:04:37Z,1
+freeCodeCamp/freeCodeCamp,411,Successive bonfires don't get marked as completed if I skip previous ones.,"I skipped 16 but completed 17, 18, 19 and 20, but only 17 gets marked. I've skipped ahead couple of times before, today is the first day I've had this issue.",2015-05-02T15:35:49Z,1,2015-05-10T11:32:44Z,7
+freeCodeCamp/freeCodeCamp,412,Field Guide #2 redirects to #21,"Number 2 in the Field Guide, ""What is Free Code Camp?,"" redirects to number 21, ""What is Free Code Camp Privacy Policy?""
+Number 2 is consequently not marked as complete, and advancing from any stop on the guide takes you to number 21 again.",2015-05-02T16:12:57Z,1,2015-05-03T01:54:39Z,0
+freeCodeCamp/freeCodeCamp,415,Zipline 2 Twitter Button Link,"I was working on zipline 2, but I noticed that the proper Twitter api for posting was not in the Zipline's bullets. This link might help campers get to the right place.
+https://dev.twitter.com/web/overview",2015-05-04T06:38:22Z,1,2015-05-06T00:03:23Z,2
+freeCodeCamp/freeCodeCamp,417,Bug in express,https://www.dropbox.com/s/f4vjj0rxgqm072q/Screenshot%202015-05-05%2012.18.53.png?dl=0,2015-05-05T16:19:22Z,1,2015-05-05T17:22:22Z,0
+freeCodeCamp/freeCodeCamp,418,"Viewing a user profile shows your points, not theirs.",https://www.dropbox.com/s/8p9ibm44gfk13qt/Screenshot%202015-05-05%2012.20.09.png?dl=0,2015-05-05T16:20:23Z,1,2015-05-06T00:00:39Z,0
+freeCodeCamp/freeCodeCamp,421,Use pre tag while displaying bonfire code on user's profile,"Simple fix, without the pre tag, it is very hard to look at the code any body has written.",2015-05-05T17:22:38Z,1,2015-05-06T00:00:37Z,1
+freeCodeCamp/freeCodeCamp,422,Edit feature on Camper News ,It would be nice if you could edit the posts you submit on Camper News. I made this post by mistake : http://www.freecodecamp.com/news/let. I was typing the title for the submission and hit the enter key by mistake and now I can neither delete it nor edit it.,2015-05-05T17:54:20Z,1,2015-08-18T05:50:37Z,2
+freeCodeCamp/freeCodeCamp,424,Logging in by email redirects to main.css,"I was logging in at http://www.freecodecamp.com/email-signin and when I clicked login it sent me to  http://www.freecodecamp.com/css/main.css
+The login was successful, and when I went to the homepage by url it worked fine.
+I was using chrome browser in case that helps.",2015-05-06T05:50:56Z,1,2015-05-07T22:56:28Z,1
+freeCodeCamp/freeCodeCamp,425,There should be consistent styling for Field Guide pages,"This page in particular uses much smaller font than other pages seem to
+http://www.freecodecamp.com/field-guide/how-do-free-code-camp's-nonprofit-projects-work",2015-05-06T20:43:47Z,1,2015-05-23T23:30:49Z,3
+freeCodeCamp/freeCodeCamp,429,Logging in from the News and Field Guide pages doesn't redirect properly (using e-mail),"When logging in from News and Field Guide pages using e-mail login, the site redirects to http://www.freecodecamp.com/stories/hotStories and http://www.freecodecamp.com/field-guide/getFieldGuideList respectively.
+To replicate, simply:
+
+Log out
+Go to http://www.freecodecamp.com/news (or /field-guide)
+Go to http://www.freecodecamp.com/email-signin
+Log in
+
+I've not tested the other ways of logging in.",2015-05-08T11:58:51Z,1,2015-05-22T12:59:36Z,0
+freeCodeCamp/freeCodeCamp,430,"After I read all the Field Guide entries, next should just take me to next article",,2015-05-08T17:57:06Z,1,2015-08-08T16:38:14Z,1
+freeCodeCamp/freeCodeCamp,431,Clarification needed for Search and Replace (21) Bonfire,"The description does not specify to preserve the title case of the word replaced. Although the tests somehow expect the title case to be preserved if the word is getting replaced.
+We should either:
+A. change the test
+B. Add a note in the description about this quirk.",2015-05-08T18:02:36Z,1,2015-05-21T16:22:51Z,0
+freeCodeCamp/freeCodeCamp,433,Potentially misleading copy for beginners,"The copy here seems misleading especially for those coming from no knowledge of javascript. It looks as though jQuery isn't also Javascript.
+
+[http://www.freecodecamp.com/challenges/get-started-with-jquery]
+Existing copy:
+
+
+jQuery is a powerful tool for manipulating HTML elements.
+
+
+It's a lot easier to use than JavaScript itself, so we'll learn it first.
+
+
+Suggested copy:
+
+
+jQuery is a powerful javascript framework for manipulating HTML elements.
+
+
+It's a lot easier to use than plain JavaScript itself, so we'll learn it first.",2015-05-09T00:47:04Z,1,2015-05-09T23:47:14Z,0
+freeCodeCamp/freeCodeCamp,437,Maintaining Streak,"Everybody has a different pace at which we are comfortable at studying. Some challenges on the Map take longer then others, sometimes you stop and read a different source. Learning is a curve, and sometimes it can be difficult to motivate yourself. I use streaks as a motivation tool. If I am not able to complete a challenge today because I spent a day reading a book to understand a concept better, then I believe I should still get a streak. Perhaps you get one point if you logged in to the website, or perhaps you write a summary not on what you've been up to today.
+Thank you for consideration.",2015-05-09T22:33:51Z,1,2015-05-23T22:46:36Z,3
+freeCodeCamp/freeCodeCamp,439,End of Waypoints leads to start of Ziplines,"When you click ""I've completed this challenge"" on 'Pair Program on Bonfires' (the last Waypoint), it directs you to 'Get Set for Ziplines' instead of 'Meet Bonfire'.",2015-05-10T03:27:39Z,1,2015-05-10T11:20:05Z,4
+freeCodeCamp/freeCodeCamp,440,Points on portfolio page are 0 if you aren't authenticated,,2015-05-10T20:09:51Z,1,2015-05-12T06:46:34Z,0
+freeCodeCamp/freeCodeCamp,442,Clicking Next Field Guide Entry Button or Pressing Ctrl-Enter Increments completion count,"When reading the field guides:
+Clicking Next Field Guide Entry Button or Pressing Ctrl-Enter Increments completion count at the top right of the header and profile page. It only does this if the the field guide is unread.",2015-05-11T22:43:31Z,1,2015-05-11T22:52:13Z,2
+freeCodeCamp/freeCodeCamp,443,Waypoints 38 & 39 404 Error,"Waypoints 38 & 39 give the following error when clicked:
+""404: We couldn't find a challenge with that name. Please double check the name.""
+And the page is redirected to another waypoint that hasn't yet been completed. Possibly due to moving the Angular courses from Code Academy to Codeschool?",2015-05-12T06:10:50Z,1,2015-05-12T07:05:02Z,0
+freeCodeCamp/freeCodeCamp,444,Add step to basejump setups for SSH key,"for step 38 here:
+http://www.freecodecamp.com/challenges/get-set-for-basejumps
+the new user needs to set up an SSH key to push to github.  the key is given by C9, but it's not clear to me how to add it to github, a simple copy /paste to my SSH keys in my account isn't working.
+This should be clarified for new users of c9.  Not sure if it's needed for every c9 workspace or just once, but I guess github is seeing c9 as a new computer?",2015-05-13T18:48:28Z,1,2015-05-23T23:32:10Z,2
+freeCodeCamp/freeCodeCamp,445,"Add a ""New"" flag to recently updated or added challenges",,2015-05-14T17:31:45Z,1,2015-05-26T22:11:18Z,1
+freeCodeCamp/freeCodeCamp,446,Bug in Tic-Tac-Toe Zipline,"Problem: At the start of the game you are asked to choose between X and O. If you click outside the popup, it goes away and then the game does nothing.
+Suggested improvement: If you click outside, it goes away and assigns you X or O randomly.",2015-05-14T19:10:45Z,1,2015-05-15T12:33:50Z,2
+freeCodeCamp/freeCodeCamp,449,refactor 'show all nonprofits' and 'show all field guide articles' buttons to not use modal,,2015-05-15T19:39:19Z,1,2015-05-26T07:37:10Z,0
+freeCodeCamp/freeCodeCamp,450,Unable to start app on local machine.,"I've cloned the repo and followed the steps in the 'Getting Started' section of README.md. I'm able to populate the database with node seed_data/seed.js, but when I run gulp, I get the following error:
+[14:36:24] Using gulpfile ~/fcc/freecodecamp/gulpfile.js
+[14:36:24] Starting 'serve'...
+[gulp] [nodemon] v1.3.7
+[gulp] [nodemon] to restart at any time, enter `rs`
+[gulp] [nodemon] watching: *.*
+[gulp] [nodemon] starting `node ./app.js`
+[14:36:25] Finished 'serve' after 1.1 s
+[14:36:25] Starting 'sync'...
+[14:36:26] Finished 'sync' after 384 ms
+[14:36:26] Starting 'default'...
+[14:36:26] Finished 'default' after 8.41 μs
+[BS] Proxying: http://localhost:3000
+[BS] Now you can access your site through the following addresses:
+[BS] Local URL: http://localhost:3001
+[BS] External URL: http://192.168.0.5:3001
+[BS] Watching files...
+Fri, 15 May 2015 21:36:36 GMT uncaughtException: OAuth2Strategy requires a clientID option
+TypeError: OAuth2Strategy requires a clientID option
+    at Strategy.OAuth2Strategy (/home/phoenix/fcc/freecodecamp/node_modules/passport-facebook/node_modules/passport-oauth2/lib/strategy.js:83:34)
+    at new Strategy (/home/phoenix/fcc/freecodecamp/node_modules/passport-facebook/lib/strategy.js:55:18)
+    at Object.<anonymous> (/home/phoenix/fcc/freecodecamp/config/passport.js:59:14)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Module.require (module.js:365:17)
+    at require (module.js:384:17)
+    at Object.<anonymous> (/home/phoenix/fcc/freecodecamp/app.js:57:20)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Function.Module.runMain (module.js:501:10)
+    at startup (node.js:129:16)
+[gulp] [nodemon] app crashed - waiting for file changes before starting...
+
+It seems passport is trying to use the facebook strategy for some reason. It should be using a local strategy, given my .env:
+MONGOHQ_URL='mongodb://localhost:27017/freecodecamp'
+SESSION_SECRET='ANY ENGLISH PHRASE'
+MANDRILL_USER='phoenixstormcrow@gmail.com'
+MANDRILL_PASSWORD='***********************'
+
+I've run both dropDatabase and dropAllUsersFromDatabase on the db in mongo client, deleted and re-cloned the repo, re-installed npm and bower packages, re-run node seed_data/seed.js, and still get this error.",2015-05-15T21:46:20Z,1,2015-05-15T21:51:57Z,3
+freeCodeCamp/freeCodeCamp,452,Possible bug in Express waypoint,"See here
+The last exercise in expressworks seems to be bugged, can't complete it.",2015-05-16T06:30:29Z,1,2015-05-21T16:24:03Z,1
+freeCodeCamp/freeCodeCamp,453,Symmetric Difference Bonfire(42) description is unclear,"Create a function that takes two or more arrays and returns an array of the symmetric difference of the provided arrays.
+I initially assumed that it wanted us to sym-diff all the provided arrays at once. However, what it actually wants is for us to sym the first two, sym that with the next one and so on..
+Many others have had the same confusion and I think it's worth a rewrite of the description.
+Create a function that takes two or more arrays and reduces them into the symmetric difference of the provided arrays.
+Like Array.prototype.reduce(), your function should sym-diff the first two arrays, then sym-diff the result with the next one, and so on.",2015-05-16T08:39:00Z,1,2015-05-16T17:48:21Z,2
+freeCodeCamp/freeCodeCamp,454,Can,,2015-05-16T17:35:33Z,1,2015-05-16T17:35:47Z,1
+freeCodeCamp/freeCodeCamp,455,SaveToPocket Chrome Extension breaks Bonfires,"[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Reg-webfont.woff' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Reg-webfont.ttf' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Sbold-webfont.woff' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Sbold-webfont.ttf' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Reg-webfont.woff' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Reg-webfont.ttf' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Sbold-webfont.woff' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Sbold-webfont.ttf' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Reg-webfont.woff' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Reg-webfont.ttf' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Sbold-webfont.woff' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Sbold-webfont.ttf' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Reg-webfont.woff' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Reg-webfont.ttf' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Sbold-webfont.woff' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Sbold-webfont.ttf' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Reg-webfont.woff' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Reg-webfont.ttf' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Sbold-webfont.woff' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Sbold-webfont.ttf' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Reg-webfont.woff' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Reg-webfont.ttf' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Sbold-webfont.woff' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Sbold-webfont.ttf' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Reg-webfont.woff' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Reg-webfont.ttf' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Sbold-webfont.woff' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] Refused to load the font 'safari-extension://com.ideashower.pocket.safari-ET279A6R5N/93af01ab/sites/global/fonts/ProximaNova-Sbold-webfont.ttf' because it violates the following Content Security Policy directive: ""font-src *.googleapis.com 'self' blob: *.freecodecamp.com http://www.freecodecamp.com ws://freecodecamp.com/ ws://www.freecodecamp.com/ *.gstatic.com *.google-analytics.com *.googleapis.com *.google.com *.gstatic.com *.doubleclick.net *.twitter.com *.twitch.tv *.twimg.com 'unsafe-eval' 'unsafe-inline' *.bootstrapcdn.com *.cloudflare.com https://*.cloudflare.com localhost:3001 ws://localhost:3001/ http://localhost:3001 localhost:3000 ws://localhost:3000/ http://localhost:3000 *.ionicframework.com https://syndication.twitter.com *.youtube.com *.jsdelivr.net https://*.jsdelivr.net *.ytimg.com *.bitly.com http://cdn.inspectlet.com/ http://hn.inspectlet.com/"".
+
+[Error] SecurityError: DOM Exception 18: An attempt was made to break through the security policy of the user agent.
+    init (gevent.js, line 11)
+    global code (content.js, line 712)",2015-05-16T17:39:41Z,1,2015-05-21T16:28:31Z,3
+freeCodeCamp/freeCodeCamp,456,Expressworks WHAT'S IN QUERY - Official solution does not work.,"The official solution for Expressworks WHAT'S IN QUERY:
+var express = require('express')
+var app = express()
+app.get('/search', function(req, res){
+  var query = req.query
+  res.send(query)
+})
+
+app.listen(process.argv[2])
+
+Gives:
+             ACTUAL                                 EXPECTED                
+
+───────────────────────────────────────────────────
+""{""                                 !=    ""{""results"":""recent"",""type"":""quote"",""page"":""8""}""
+""  ""type"": ""quote"",""            !=
+""  ""page"": ""8"",""                !=
+""  ""proto"": {}""               !=
+""}""                                 !=
+It is obviously not expecting:    ""  ""proto"": {}""
+Manually building the object like so does work:
+app.get('/search', function(req, res){
+var send = {};
+send.results = req.query.results;
+send.type = req.query.type;
+send.page = req.query.page;
+send = JSON.stringify(send);
+res.status(200).send(send);
+
+});",2015-05-18T00:43:56Z,1,2015-05-18T00:45:29Z,3
+freeCodeCamp/freeCodeCamp,459,Fix formatting of Bonfire Solutions,"The bonfire solutions on a user's profile page have all the indentation stripped out, making them very difficult to read, and annoying to copy/paste. Opening a new issue because I was unable to reopen #332.",2015-05-20T00:35:47Z,1,2015-05-21T16:24:13Z,0
+freeCodeCamp/freeCodeCamp,461,Show HTML doesn't work properly in narrow views,"Div with frame covers button. Additonally, navbar break/",2015-05-20T02:58:54Z,1,2015-05-26T07:37:01Z,1
+freeCodeCamp/freeCodeCamp,464,Bug alert! Sum of All Prime is doubling submitted answers,"Hi!
+It seems that Sum Of All Prime validator is messed up. It is taking the answer generated by submissions and doubling it.
+I am getting the error below:
+expect(sumPrimes(10)).to.equal(17);expected 34 to equal 17
+17 should be the correct answer.
+Here is my code:
+var primes = [];
+var primeSum = 0;
+
+function sumPrimes(num) {
+  for (var i=0; i<=num; i++) {
+
+    if (i>11) {
+      var j=0;
+      for ( j=0; j<primes.length; j++) {
+        if ((i % primes[j]) === 0) {
+          break;
+        }
+      }
+
+      if (j==primes.length) {
+        addToPrime(i);
+      }
+
+    } else {
+      if (i===2 || i===3 || i===5 || i===7 || i==11) {
+        addToPrime(i);
+      }
+    }
+  }
+
+  return primeSum;
+}
+
+function addToPrime(n) {
+  primes.push(n);
+  primeSum += n;
+}",2015-05-20T18:33:04Z,1,2015-05-21T04:39:06Z,4
+freeCodeCamp/freeCodeCamp,465,Navbar on show html doesn't scale properly,Resizing the window has the navbar pop down before the frame moves.,2015-05-21T01:52:35Z,1,2015-05-23T22:10:18Z,3
+freeCodeCamp/freeCodeCamp,469,Cannot read property 'progressTimestamps' of undefined,"Seeing this in production
+here: https://github.com/FreeCodeCamp/freecodecamp/blob/staging/controllers/story.js#L238
+solution: Use User.findById and/or check for user existence and end early.
+cc: @terakilobyte",2015-05-21T16:01:48Z,1,2015-05-22T12:54:01Z,0
+freeCodeCamp/freeCodeCamp,471,Find my city list improper city listed ,"In the field guide ""How can I find other free code campers in my city"" list  number 12 is improperly titled as ""Atlanta"".
+http://www.freecodecamp.com/field-guide/how-can-i-find-other-free-code-camp-campers-in-my-city",2015-05-22T04:08:30Z,1,2015-05-23T22:46:03Z,1
+freeCodeCamp/freeCodeCamp,472,Sign in with email race condition,"@gareth was able to reproduce this issue: https://www.evernote.com/l/AHT9BkdkYARCi6XTf0dxzW7hKzwHiwLUCygB/image.png
+We hadn't received reports of it in quite some time, but it doesn't seem to be fully fixed.",2015-05-22T07:09:25Z,1,2015-05-22T12:54:00Z,1
+freeCodeCamp/freeCodeCamp,474,email notifications about news comments should hyperlink to actual comment thread,"I recieved this email:
+Just a quick heads-up: testify
+replied to you on Camper News.
+You can keep this conversation going.
+Just head back to the discussion here: http://freecodecamp.com/news/
+learning-d3--essential-skills-for-the-javascript-programmer--mr-hassles-long-underp
+
+the Free Code Camp Volunteer Team
+
+the link takes me to the main news page.  Searching for ""d3"" took me to my original submission, but there was no additional comment from ""testify"".
+Perhaps as a separate issue, commenting should bump the news item up in some way.",2015-05-22T13:04:57Z,1,2015-05-26T22:11:43Z,4
+freeCodeCamp/freeCodeCamp,475,open links on new tab?,"On the profile page, if you go and click a link ""View my solution"" the link is loaded in the same window (this are external links from codepen.io).",2015-05-22T22:30:49Z,1,2015-05-23T22:41:50Z,1
+freeCodeCamp/freeCodeCamp,477,Bonfire 11: Chunky Monkey,"The test cases may be insufficient. A camper submitted the following code successfully:
+function chunk(arr, size) {
+    var first = [];
+
+    while(first.length < size) {
+        first.push(arr.shift());
+    }
+
+    return [first, arr];
+}
+
+It passes the current test cases, but it would fail if the tests included something like the following:
+chunk(['a', 'b', 'c', 'd', 'e', 'f', 'g'], 2);
+In this case, it produces two arrays of 2 and 5 items.",2015-05-23T08:55:38Z,1,2015-05-27T17:30:57Z,0
+freeCodeCamp/freeCodeCamp,478,"Bonfires Don't Save Until ""Go to Next Bonfire"" is Pressed","When a Bonfire has been successfully completed, many times I've pressed the 'x' to close the modal to go over my solution again.  If you leave the Bonfire at this point, say to go read some news, the Bonfire isn't saved as completed and you've lost your solution.
+Maybe it's a good idea to save as completed as soon as soon as the modal is triggered.",2015-05-24T07:01:57Z,1,2015-05-25T21:30:14Z,1
+freeCodeCamp/freeCodeCamp,479,Streak and calendar aren't synced.,"As you can see here, I have worked on FCC for 9 days straight, but the streak counter is off. I'm pretty sure this has something to do with how you handle timezones since I remember working at about 1am here but not getting the streak updated until way later.",2015-05-24T14:17:33Z,1,2015-08-07T00:19:53Z,4
+freeCodeCamp/freeCodeCamp,480,When use image is broken camper news image breaks.,"Steps to repeat.
+
+Use twitter for signing
+update twitter image
+
+
+twitter breaks last image url
+FCC shows default camper image for user image
+
+
+post link to camper news
+
+
+Camper news uses user image url, which at this point is broken
+
+
+Update image url to new twitter image url
+
+
+User image is updated
+Camper news image is not updated, still broken.
+
+
+possible solutions:
+
+When posting link, ping user image and look for 200 code, if positive use image, else use default image. (only checks once, only slows down link posting)
+When rendering camper news pull image url from user. (this would be costly and would slow down rendering)",2015-05-25T00:28:41Z,1,2015-08-11T16:06:40Z,3
+freeCodeCamp/freeCodeCamp,481,Vim/Emacs/Sublime Text keybindings in Bonfires,"I was digging around the code base when I found out that you use CodeMirror as the editor for Bonfires. CodeMirror supports Vim, Emacs and Sublime Text keymaps, and since quite a big part of the user base (at least the one active in the Slack room) uses one or more of these editors, implementing them would most likely be very appreciated. I'd do it myself, but turns out the building blocks of FCC confuses the living hell out of me, so I'll come back when I'm done with all the challenges.",2015-05-25T12:39:55Z,1,2015-05-26T06:31:42Z,2
+freeCodeCamp/freeCodeCamp,482,Bonfires code editor should auto-save a user's work,"It would be great if the code editor for the Bonfires auto-saved a user's work. This would prevent losing code if you accidentally close your tab, or your browser crashes. It would also make it easy to go back and review what code you used, after having completed a bonfire.",2015-05-26T00:40:53Z,1,2015-08-18T05:51:19Z,3
+freeCodeCamp/freeCodeCamp,483,Images in Waypoints should one-click expandible,,2015-05-26T04:06:59Z,1,2015-09-14T21:06:03Z,0
+freeCodeCamp/freeCodeCamp,484,HTML waypoint codemirror cursor occasionally appears on the wrong line,,2015-05-26T04:37:30Z,1,2015-05-31T21:21:54Z,1
+freeCodeCamp/freeCodeCamp,485,Waypoint 40: Manage Packages with NPM tweaks,"Summary of recommendations:
+
+Recommend changing step 11 of Waypoint 40 to drop sudo.
+Recommend adding two notes on possible bugs in parts 08 and 09 of how-to-npm.
+
+Tweak step 11
+
+Run this command: npm install how-to-npm -g
+
+I ran simultaneous workspaces, installing how-to-npm with and without sudo. With sudo, you needed to sudo all of the things, which shouldn't be necessary, and some things didn't work as expected even then.
+(Ex.: Part 13, Outdated. npm outdated produces no result, so campers would have to guess the outdated package or ask how-to-npm to reveal the answer.)
+Without sudo nearly everything works as expected with two minor bugs:
+Notes to be added
+
+In part 08 Publish, how-to-npm forgot about me and npm adduser was of no use. But if you return to part 02 and run npm adduser again (or its alias 'npm login') and verify, then return to part 08, you can proceed.
+In part 09 Version, npm version is supposed to automatically update your package.json but it doesn’t. You have to manually edit the version number in your package.json before you can verify and continue.
+
+Aside from that, everything else works, and you don't have to sudo anything.",2015-05-26T05:25:01Z,1,2015-05-26T07:36:50Z,0
+freeCodeCamp/freeCodeCamp,487,Challenge http://www.freecodecamp.com/challenges/waypoint-add-images-to-your-website has an issue ,Test passes even though the img src attribute is empty,2015-05-26T06:30:55Z,1,2015-05-26T17:19:46Z,3
+freeCodeCamp/freeCodeCamp,488,Challenge http://www.freecodecamp.com/challenges/waypoint-add-images-to-your-website has an issue ,After I complete this Waypoint it takes me to Zipline: Build a Pomodoro Clock.,2015-05-26T06:51:10Z,1,2015-05-26T17:13:54Z,1
+freeCodeCamp/freeCodeCamp,489,Challenge http://www.freecodecamp.com/challenges/waypoint-link-to-external-pages-with-anchor-elements has an issue ,The two tests are reversed. Anchor text satisfies the content of the href and vice versa.,2015-05-26T06:59:33Z,1,2015-05-26T18:19:19Z,1
+freeCodeCamp/freeCodeCamp,490,Challenge http://www.freecodecamp.com/challenges/waypoint-wrap-an-anchor-element-within-a-paragraph has an issue ,"The test is satisfied by an opening paragraph tag, but campers should have to close the tag too.
+<p><a href='http://www.catphotoapp.com'>cat photos</a>
+should not pass but this should:
+<p><a href='http://www.catphotoapp.com'>cat photos</a></p>",2015-05-26T07:01:44Z,1,2015-05-26T07:04:36Z,1
+freeCodeCamp/freeCodeCamp,491,Challenge http://www.freecodecamp.com/challenges/waypoint-turn-an-image-into-a-link has an issue ,"The challenge is satisfied before finishing the opening anchor tag, let alone adding the closing tag.
+This passes, even though it's broken:
+<a href=""#""<img class='smaller-image thick-green-border' src='https://bit.ly/fcc-kittens'/>",2015-05-26T07:04:16Z,1,2015-05-26T17:22:28Z,1
+freeCodeCamp/freeCodeCamp,492,Challenge http://www.freecodecamp.com/challenges/waypoint-change-the-font-size-of-an-element has an issue ,"Not extremely broken, but the tests passed even though only the first p element was set to size 16. (Directions say to ""... set the font size of all p elements to 16 pixels."")",2015-05-26T07:26:34Z,1,2015-05-26T18:23:49Z,1
+freeCodeCamp/freeCodeCamp,493,Challenge http://www.freecodecamp.com/challenges/waypoint-add-images-to-your-website has an issue ,"Approves challenge as completed though only one requirement has been satisifed(""Your webpage should have an image element.""). Other requirement(""Your image should have have a src attribute that points to the kitten image."") still has a red X by it. However, the move to next challenge button is still lit up green.",2015-05-26T07:31:21Z,1,2015-05-26T17:41:35Z,2
+freeCodeCamp/freeCodeCamp,494,Fix dasherization of Field Guide articles,"""404: We couldn't find a field guide entry with that name. Please double check the name.""
+takes me to http://www.freecodecamp.com/field-guide/why-doesnt-free-code-camp-teach-technical-interviewing-skills (think is a new article)",2015-05-26T08:17:34Z,1,2015-05-31T23:29:21Z,3
+freeCodeCamp/freeCodeCamp,495,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-text-field has an issue ,"There are two bugs I would like to report:
+
+I could not reach my ""next challenge"" today, the link brought me to the first challenge, which I already completed
+I have ""Syntax error, unrecognized expression"" in the ""Waypoint: Create a text field"", which prevent me from going further.",2015-05-26T08:32:52Z,1,2015-05-26T20:38:56Z,3
+freeCodeCamp/freeCodeCamp,496,Challenge http://www.freecodecamp.com/challenges/zipline-build-a-pomodoro-clock has an issue ,This is pointed from waypoint 18.,2015-05-26T08:42:38Z,1,2015-05-26T18:28:27Z,1
+freeCodeCamp/freeCodeCamp,497,Challenge http://www.freecodecamp.com/challenges/waypoint-add-images-to-your-website has an issue ,"""Go to my next challenge"" links to ""Zipline: Build a Pomodoro Clock"" rather than ""Waypoint: Size your Images""",2015-05-26T08:59:18Z,1,2015-05-26T18:30:22Z,1
+freeCodeCamp/freeCodeCamp,498,Go to my next challenge button not working.,"The go to my next challenge button on the new waypoints sn't working for me on Firefox 38.0.1, though it's fine on Chrome.
+The help and bug buttons also aren't working both on the new waypoints and the old style waypoints.The I've completed this challenge button on the old style waypoints is working but the onto my next challenge button that appears after that in the  popup box isn't working.",2015-05-26T09:10:26Z,1,2015-05-26T09:13:25Z,1
+freeCodeCamp/freeCodeCamp,499,Challenge http://www.freecodecamp.com/challenges/drop-it-like-its-hot has an issue ,"Basic Algorithm Scripting - Bonfire #34 - Drop it Like It's Hot link gives error:
+404: We couldn't find a challenge with that name. Please double check the name.
+Browser: Chrome 43.0.2357.65",2015-05-26T09:27:55Z,1,2015-05-26T17:39:44Z,1
+freeCodeCamp/freeCodeCamp,500,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-text-field has an issue ,Challange responses with 'Syntax Error' even in 'mint' state or with complete empty code-file,2015-05-26T09:41:07Z,1,2015-05-26T20:39:18Z,2
+freeCodeCamp/freeCodeCamp,501,Challenge http://www.freecodecamp.com/challenges/waypoint-mobile-responsive-images has an issue ,"Please tell us in detail here how we can make this challenge better.
+when i have completed this waypoint, it goes direct to ""zipline-build-a-pomodoro-clock"", could you please lookat this.",2015-05-26T09:47:44Z,1,2015-05-26T18:32:38Z,1
+freeCodeCamp/freeCodeCamp,502,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-text-field has an issue ,"Apparently the input type=""text"" doesn't work? I've tried to add a form to it as well... Is this a bug?",2015-05-26T10:03:53Z,1,2015-05-26T18:34:45Z,4
+freeCodeCamp/freeCodeCamp,503,Challenge http://www.freecodecamp.com/challenges/zipline-build-a-pomodoro-clock has an issue ,Hello! I was sent to this challenge from a waypoint in the basic HTML/CSS section (#18)...that seems like jumping too far!,2015-05-26T10:37:17Z,1,2015-05-26T18:35:43Z,1
+freeCodeCamp/freeCodeCamp,504,Challenge http://www.freecodecamp.com/challenges/waypoint-line-up-form-elements-responsively-with-bootstrap has an issue ,"Test text doesn't match up with the challenge. The challenge is related to the form and submit button, but the text in the tests is talking about checkboxes (and has the wrong sizes).
+The tests pass when you do the challenge correctly though, it's just the text on the screen that's incorrect (I think).",2015-05-26T10:52:55Z,1,2015-05-26T18:39:40Z,1
+freeCodeCamp/freeCodeCamp,505,Challenge http://www.freecodecamp.com/challenges/waypoint-add-font-awesome-icons-all-of-our-buttons has an issue ,"In the challenge the instructions incorrectly refer to the like button.
+You should add a  within your like button element. -> should be delete button.
+You should add a  within your like button element. -> should be info button.",2015-05-26T11:05:21Z,1,2015-05-26T18:40:12Z,1
+freeCodeCamp/freeCodeCamp,506,Challenge http://www.freecodecamp.com/challenges/waypoint-line-up-form-elements-responsively-with-bootstrap has an issue ,"Wrap each of your checkboxes inside its own div with the class ""col-xs-4"". -> Wrap your submit button inside its own div with the class ""col-xs-5"".
+Wrap each of your checkboxes inside its own div with the class ""col-xs-4"". -> Warp your text input field inside its own div with the class ""col-xs-7"".
+Wrap your all of your checkboxes inside one div with the class ""row"".  -> Wrap your text input field and submit button inside one div with the class ""row"".",2015-05-26T11:13:57Z,1,2015-05-26T18:41:11Z,1
+freeCodeCamp/freeCodeCamp,507,Challenge http://www.freecodecamp.com/challenges/bonfire-smallest-common-multiple has an issue ,"In the last test case I am returnig the correct value, but it seems that ""should"" isn't defined.
+My program:
+function gcd(a, b){
+var c;
+while (b){
+c = b;
+b = a % b;
+a = c;
+}
+return a;
+}
+function lcm(a, b){
+return a * b / gcd(a, b);
+}
+function smallestCommons(arr) {
+if(arr[0] == arr[1])return 0;
+var a = Math.min(arr[0],arr[1]);
+var b = Math.max(arr[0],arr[1]);
+var x = [];
+for(var i = a; i <= b; i++)x.push(i);
+return x.reduce(lcm);
+}",2015-05-26T11:24:53Z,1,2015-05-26T12:44:20Z,0
+freeCodeCamp/freeCodeCamp,508,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-text-field has an issue ,"Syntax error, unrecognized expression",2015-05-26T11:31:28Z,1,2015-05-26T16:45:50Z,3
+freeCodeCamp/freeCodeCamp,509,Challenge http://www.freecodecamp.com/challenges/waypoint-inform-with-the-paragraph-element has an issue ,the test is checking for a  tag but says it needs a  tag,2015-05-26T11:34:04Z,1,2015-05-26T18:45:20Z,1
+freeCodeCamp/freeCodeCamp,510,Challenge http://www.freecodecamp.com/challenges/waypoint-add-font-awesome-icons-all-of-our-buttons has an issue ,"wrong error messages
+http://take.ms/YrR2c",2015-05-26T11:35:50Z,1,2015-05-26T18:46:06Z,1
+freeCodeCamp/freeCodeCamp,511,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-set-of-radio-buttons has an issue ,"Syntax error, unrecognized expression",2015-05-26T11:37:43Z,1,2015-05-26T20:39:07Z,3
+freeCodeCamp/freeCodeCamp,512,Challenge http://www.freecodecamp.com/challenges/waypoint-check-radio-buttons-and-checkboxes-by-default has an issue ,"Syntax error, unrecognized expression",2015-05-26T11:41:40Z,1,2015-05-26T17:04:42Z,1
+freeCodeCamp/freeCodeCamp,513,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-set-of-checkboxes has an issue ,Bug? Code is correct but doesn't work.,2015-05-26T11:44:55Z,1,2015-05-26T18:47:13Z,2
+freeCodeCamp/freeCodeCamp,514,Challenge http://www.freecodecamp.com/challenges/waypoint-check-radio-buttons-and-checkboxes-by-default has an issue ,"unrecognized expression, but it is correct:
+<'label><'input type='checkbox' name='personality' checked> Loving<'/label>",2015-05-26T11:47:47Z,1,2015-05-26T16:58:10Z,3
+freeCodeCamp/freeCodeCamp,515,Challenge http://www.freecodecamp.com/challenges/waypoint-inform-with-the-paragraph-element has an issue ,"It says to create a ""h2"" element when instead its expecting a ""p"" element.",2015-05-26T12:05:13Z,1,2015-05-26T18:47:37Z,1
+freeCodeCamp/freeCodeCamp,516,Challenge http://www.freecodecamp.com/challenges/waypoint-import-a-google-font has an issue ,"The challenge can be completed by simply typing in font-family: 'Lobster'; , Rather than requiring the prior import from google fonts ""href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css",2015-05-26T12:15:44Z,1,2015-05-29T22:47:50Z,3
+freeCodeCamp/freeCodeCamp,517,"""On to my next challenge"" doesn't work","When clicking on ""I've completed this challenge"" for the Object Oriented JavaScript Challenges, you see a pop up with a button for going to the next challenge but it doesn't seem to work.",2015-05-26T12:19:22Z,1,2015-05-26T12:49:29Z,1
+freeCodeCamp/freeCodeCamp,518,Challenge http://www.freecodecamp.com/challenges/waypoint-check-radio-buttons-and-checkboxes-by-default has an issue ,Instructions say only one checkbox needs to be checked but waits until all are checked before passing,2015-05-26T12:21:16Z,1,2015-05-26T18:48:44Z,1
+freeCodeCamp/freeCodeCamp,519,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-text-field has an issue ,"The challenge does not show anything meaningful, it says
+Syntax error, unrecognized expression",2015-05-26T13:15:59Z,1,2015-05-26T20:38:38Z,2
+freeCodeCamp/freeCodeCamp,520,Challenge http://www.freecodecamp.com/challenges/bonfire-return-largest-numbers-in-arrays has an issue ,"Solution produces results equal to those asserted but but fails same tests, below. Code to replicate included, below.
+assert(largestOfFour([[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]]).should.eql([9,35,97,1000000]));Cannot read property 'eql' of undefined
+(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]])).should.eql([5,27,39,1001]);Cannot read property 'eql' of undefined
+function largestOfFour(arr) {
+maxArr = [];
+maxNum = 0;
+for (var x in arr) {
+for(var y in arr[x]) {
+if (arr[x][y] > maxNum) maxNum = arr[x][y];
+}
+maxArr.push(maxNum);
+maxNum = 0;
+}
+return maxArr;
+}",2015-05-26T13:19:59Z,1,2015-05-26T16:55:21Z,1
+freeCodeCamp/freeCodeCamp,521,The #help channel on Slack has become useless,"Too many walls of text to scroll through and I have yet to see a single bot-posted problem that has further explanation by users.
+The functionality should be limited to users who actually describe what they need help with.
+While I see value in the #letspair bot (whose text could be shortened imo), I personally think #help was fine the way it was before, and that this bot is trying to solve a problem that didn't exist.",2015-05-26T13:22:08Z,1,2015-05-26T16:39:45Z,0
+freeCodeCamp/freeCodeCamp,522,Challenge http://www.freecodecamp.com/challenges/waypoint-link-to-external-pages-with-anchor-elements has an issue ,"Please tell us in detail here how we can make this challenge better.
+The completion is inverted, completing the anchor will highlight the adress and completing the anchor adress will highlight as done the anchor text",2015-05-26T13:28:25Z,1,2015-05-26T18:50:35Z,1
+freeCodeCamp/freeCodeCamp,523,Challenge http://www.freecodecamp.com/challenges/waypoint-turn-an-image-into-a-link has an issue ,"I have wrapped my image in anchor tag, still it's not getting accepted.
+Code snippet.
+Click here for",2015-05-26T13:30:31Z,1,2015-05-26T16:49:00Z,1
+freeCodeCamp/freeCodeCamp,524,Challenge http://www.freecodecamp.com/challenges/waypoint-turn-an-image-into-a-link has an issue ,"Please tell us in detail here how we can make this challenge better.
+Completion is triggered only by
+
+
+
+instead of",2015-05-26T13:31:28Z,1,2015-05-26T17:40:43Z,1
+freeCodeCamp/freeCodeCamp,525,Challenge http://www.freecodecamp.com/challenges/waypoint-line-up-form-elements-responsively-with-bootstrap has an issue ,"the error says that Wrap each of your checkboxes inside its own div with the class ""col-xs-4"". While in the instructions it says that the input should be col-xs-7 and the button col-xs-5",2015-05-26T13:39:44Z,1,2015-05-26T16:54:06Z,3
+freeCodeCamp/freeCodeCamp,526,Challenge http://www.freecodecamp.com/challenges/waypoint-check-radio-buttons-and-checkboxes-by-default has an issue ,"The challenge completes only if the first radiobox and checkbox is checked, otherwise failse.
+The text is misleading
+One of the radio buttons on your form should be checked by default.
+One of the checkboxes on your form should be checked by default.
+should either validate if one is checked or text should be first radio / first option to be checked",2015-05-26T13:43:51Z,1,2015-05-26T16:53:34Z,2
+freeCodeCamp/freeCodeCamp,527,Challenge http://www.freecodecamp.com/challenges/waypoint-check-radio-buttons-and-checkboxes-by-default has an issue ,Adding checked does not let me progress. Looks like a bug as it's a simple task.,2015-05-26T13:44:46Z,1,2015-05-26T16:52:31Z,2
+freeCodeCamp/freeCodeCamp,528,Challenge http://www.freecodecamp.com/challenges/waypoint-mobile-responsive-images has an issue ,The link for bootstrap stylesheet is too long for the column.,2015-05-26T13:50:09Z,1,2015-05-26T16:46:48Z,1
+freeCodeCamp/freeCodeCamp,529,Challenge http://www.freecodecamp.com/challenges/waypoint-adjust-the-margin-of-an-element has an issue ,"Last paragraph states:  ""When you increase the green box's padding, it will increase the distance between its border and surrounding elements.""
+I believe the bold word should be margin",2015-05-26T13:50:26Z,1,2015-05-26T16:42:24Z,1
+freeCodeCamp/freeCodeCamp,530,css/html waypoints,they give you the green light before you close the tags :),2015-05-26T14:02:08Z,1,2015-05-26T16:40:16Z,2
+freeCodeCamp/freeCodeCamp,531,Challenge http://www.freecodecamp.com/challenges/waypoint-add-font-awesome-icons-all-of-our-buttons has an issue ,The text of the challenge is wrong,2015-05-26T14:04:45Z,1,2015-05-26T16:29:47Z,1
+freeCodeCamp/freeCodeCamp,532,Challenge http://www.freecodecamp.com/challenges/waypoint-line-up-form-elements-responsively-with-bootstrap has an issue ,"Text is completely wrong, clear a mismatch between the information on top, title and challenge points",2015-05-26T14:08:49Z,1,2015-05-26T16:27:28Z,1
+freeCodeCamp/freeCodeCamp,533,Challenge http://www.freecodecamp.com/challenges/waypoint-link-to-external-pages-with-anchor-elements has an issue ,When I format the text correctly it checks off that I've created the link.,2015-05-26T14:55:42Z,1,2015-05-26T16:38:45Z,0
+freeCodeCamp/freeCodeCamp,534,Challenge http://www.freecodecamp.com/challenges/waypoint-wrap-an-anchor-element-within-a-paragraph has an issue ,Seemed to pass after putting the beginning paragraph tag. Doesn't look like it checked for the closing tag.,2015-05-26T14:58:25Z,1,2015-05-26T15:02:21Z,2
+freeCodeCamp/freeCodeCamp,535,Challenge http://www.freecodecamp.com/challenges/waypoint-line-up-form-elements-responsively-with-bootstrap has an issue ,"The individual steps listed underneath the ""Help"" and ""Bug"" buttons do not represent what is being asked in the initial description for this challenge. They are asking to perform steps that are not related to this lesson.",2015-05-26T15:11:58Z,1,2015-05-26T16:08:58Z,0
+freeCodeCamp/freeCodeCamp,536,Help bot not tagging people correctly,,2015-05-26T15:14:41Z,1,2015-05-26T16:41:53Z,1
+freeCodeCamp/freeCodeCamp,538,Challenge http://www.freecodecamp.com/challenges/waypoint-change-the-color-of-text has an issue ,"When I was going through the challenges, ""Go to my next challenge"" skipped over this challenge.",2015-05-26T16:01:53Z,1,2015-05-26T16:52:31Z,1
+freeCodeCamp/freeCodeCamp,539,Able to click next challenge button multiple times and skip a challenge,,2015-05-26T16:52:54Z,1,2015-05-26T16:53:46Z,1
+freeCodeCamp/freeCodeCamp,541,Challenge http://www.freecodecamp.com/challenges/waypoint-headline-with-the-h2-element has an issue ,"I don't know if ""bugs"" is where typos go, but.... the checklist on this page has:
+Create an h2 elements.
+There should not be an s at the end.
+(Also: This report a bug button took me to Github, but as an FCC student at HMTL level I don't yet have a Github account or Github orientation.)",2015-05-26T17:07:42Z,1,2015-05-26T17:15:30Z,3
+freeCodeCamp/freeCodeCamp,542,"Create a ""Sign up for a GitHub account"" waypoint",This issue references #541.,2015-05-26T17:16:07Z,1,2015-06-23T06:11:10Z,5
+freeCodeCamp/freeCodeCamp,543,Challenge http://www.freecodecamp.com/challenges/waypoint-add-borders-around-your-elements has an issue ,"Just put this in
+
+etc.....
+.thick-green-border {
+width: 100px;
+border-color: green;
+border-width: 10px;
+border-style: solid;
+}
+</style>
+CatPhotoApp
+ 
+........etc
+
+and it says its ok, but it isn't as although it fulfils the criteria, the 'smaller-image' class has been deleted and incorporated into the thick-green-border' class.
+I think it's supposed to be
+
+etc.....
+.smaller-image {
+width: 100px;
+}
+.thick-green-border {
+border-color: green;
+border-width: 10px;
+border-style: solid;
+}
+</style>
+CatPhotoApp
+
+....etc",2015-05-26T17:26:01Z,1,2015-05-28T14:50:57Z,3
+freeCodeCamp/freeCodeCamp,544,Challenge http://www.freecodecamp.com/challenges/waypoint-turn-an-image-into-a-link has an issue ,"The challenge asks for: Wrap your image element inside an anchor element that has its href attribute set to ""#"".
+My code is:
+Click here for 
+And when I hover over the image, the mouse cursor becomes a link clicking pointer. However I cannot complete the challenge.
+Thank you,
+Ines",2015-05-26T17:29:47Z,1,2015-05-27T02:10:13Z,3
+freeCodeCamp/freeCodeCamp,546,Add spinner to camper news search,,2015-05-26T17:47:58Z,1,2015-08-21T19:41:30Z,11
+freeCodeCamp/freeCodeCamp,547,Challenge http://www.freecodecamp.com/challenges/waypoint-wrap-an-anchor-element-within-a-paragraph has an issue ,"This code gets passed o.k.
+see my cat photos
+but I believe it should be
+click here for cat photos",2015-05-26T18:03:09Z,1,2015-05-26T18:31:45Z,7
+freeCodeCamp/freeCodeCamp,548,Challenge http://www.freecodecamp.com/challenges/waypoint-visually-separate-elements-with-line-breaks has an issue ,"It marked the answer as correct when i put ""br"" between ""h1"" and ""h2"" tags when the prompt ask for something else",2015-05-26T18:16:59Z,1,2015-05-26T18:51:56Z,3
+freeCodeCamp/freeCodeCamp,549,Challenge url,"Broken url on 'view my solution' in the profile page. It leads to 'http//'
+Analysis:
+a(href=""http://"" + challenge.solution, target='_blank')
+
+Eg:
+http://http://codepen.io/AdventureBear/pen/vEoVMw
+evaluates to
+http//codepen.io/AdventureBear/pen/vEoVMw",2015-05-26T18:24:21Z,1,2015-05-26T20:09:55Z,2
+freeCodeCamp/freeCodeCamp,550,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-text-field has an issue ,"the syntax checker and mobile viewer have had compounding issues for me as a work through this tutorial in firefox.
+this is how this challenge loaded without my changing any of the text. The mobile view shows duplicated content which doesn't match the code",2015-05-26T18:40:36Z,1,2015-05-26T22:09:06Z,4
+freeCodeCamp/freeCodeCamp,551,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-text-field has an issue ,"Syntax error, unrecognized expression
+from base code when the waypoint loads.  beneath lists doesn't complete challenge.",2015-05-26T18:50:11Z,1,2015-05-26T22:08:45Z,3
+freeCodeCamp/freeCodeCamp,552,Challenge http://www.freecodecamp.com/challenges/waypoint-add-images-to-your-website has an issue ,You do not have to complete the image tag code for completion. As long as you type in <img src=  it allows you to go ahead to the next waypoint. It should require the tag to complete before being ready to move on. **See image,2015-05-26T18:55:20Z,1,2015-05-27T01:46:44Z,1
+freeCodeCamp/freeCodeCamp,553,Challenge http://www.freecodecamp.com/challenges/waypoint-override-styles-with-important has an issue ,"You can explain how put more classes in the same element. And I found a bug. The exercise can be completed without the .blue-text's style.
+ps: I love FreeCodeCamp s2",2015-05-26T19:02:24Z,1,2015-05-27T02:09:54Z,2
+freeCodeCamp/freeCodeCamp,554,Firefox is duplicating everything!,https://www.evernote.com/l/AHQb4vQ_IVJFcJIVCLyQbEKfsI0MknLAI-AB/image.png,2015-05-26T19:03:28Z,1,2015-05-27T13:15:46Z,2
+freeCodeCamp/freeCodeCamp,555,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-text-field has an issue ,"Is this a bug?  Im reasonably sure my code is correct but I can't go on to the next waypoint.
+My code is
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<h2 class='red-text'>CatPhotoApp</h2>
+
+<p>Click here for <a href='#'>cat photos</a>.</p>
+
+<a href='#'><img class='smaller-image thick-green-border' src='https://bit.ly/fcc-kittens'/></a>
+
+<p>Things cats love:</p>
+<ul>
+  <li>cat nip</li>
+  <li>laser pointers</li>
+  <li>lasagna</li>
+</ul>
+<p>Top 3 things cats hate:</p>
+<ol>
+  <li>flea treatment</li>
+  <li>thunder</li>
+  <li>other cats</li>
+</ol>
+
+<form>
+<input type=""text"" name=""text"">
+</form>
+
+
+But I still get a ""Syntax error, unrecognized expression""
+I popped it into Brackets IDE and it seems to work o.k. though?
+Thanks",2015-05-26T19:04:03Z,1,2015-05-26T20:40:59Z,1
+freeCodeCamp/freeCodeCamp,556,Challenge http://www.freecodecamp.com/challenges/waypoint-wrap-an-anchor-element-within-a-paragraph has an issue ,"Please tell us in detail here how we can make this challenge better.
+This challenge was solved only by entering  tag as follows (other challenges have similar bugs: only enter half the solution -> challenge complete):
+<p> <a href='http://www.catphotoapp.com'>cat photos</a>",2015-05-26T19:21:43Z,1,2015-05-27T01:49:14Z,1
+freeCodeCamp/freeCodeCamp,557,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-text-field has an issue ,"Syntax error, unrecognized expression instead of task",2015-05-26T19:22:20Z,1,2015-05-26T20:40:44Z,1
+freeCodeCamp/freeCodeCamp,558,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-set-of-radio-buttons has an issue ,"Syntax error, unrecognized expression
+Syntax error, unrecognized expression
+instead of tasks",2015-05-26T19:25:46Z,1,2015-05-26T20:40:34Z,6
+freeCodeCamp/freeCodeCamp,559,Challenge http://www.freecodecamp.com/challenges/waypoint-trigger-jquery-effects has an issue ,"I finish this and dont let me go on.
+thanks",2015-05-26T19:37:55Z,1,2015-05-27T01:50:06Z,1
+freeCodeCamp/freeCodeCamp,561,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-text-field has an issue ,"When you add <input type='text'> after the ordered list this error pops up:
+Syntax error, unrecognized expression
+instead of completing the challenge.",2015-05-26T19:54:15Z,1,2015-05-26T20:39:56Z,1
+freeCodeCamp/freeCodeCamp,562,Challenge http://www.freecodecamp.com/challenges/waypoint-turn-an-image-into-a-link has an issue ,"I wrote  but the ""X"" message says that I am wrong. However, ""Go to my next challenge"" is allowed.",2015-05-26T19:54:50Z,1,2015-05-27T01:50:20Z,0
+freeCodeCamp/freeCodeCamp,563,Challenge http://www.freecodecamp.com/challenges/waypoint-change-the-color-of-text has an issue ,"No closing </h2> element in the More Information section:
+Here's how you would set your h2 element's text color to blue:
+<h2 style=""color: blue"">CatPhotoApp<h2>",2015-05-26T20:06:27Z,1,2015-05-26T20:29:40Z,3
+freeCodeCamp/freeCodeCamp,564,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-text-field has an issue ,"the ""x"" message says ""Syntax error, unrecognized expression"" all the time, and the exercise can not be finished",2015-05-26T20:11:56Z,1,2015-05-26T20:39:39Z,1
+freeCodeCamp/freeCodeCamp,565,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-text-field has an issue ,"Did anyone else encounter any issue with this challenge?
+I've inserted the command  at the end of the my code. The input text box displayed OK on the right side. However, I have this error message: ""Syntax error, unrecognized expression"".
+Any pointer will be appreciated.",2015-05-26T20:13:41Z,1,2015-05-26T20:39:31Z,2
+freeCodeCamp/freeCodeCamp,566,Challenge http://www.freecodecamp.com/challenges/waypoint-import-a-google-font has an issue ,"The insertion of
+link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'
+isn't listed at the top of the Coding screen; without it the Lobster font doesn't display correctly.",2015-05-26T20:24:56Z,1,2015-05-26T20:47:39Z,3
+freeCodeCamp/freeCodeCamp,567,Challenge http://www.freecodecamp.com/challenges/waypoint-specify-how-fonts-should-degrade has an issue ,"The ""Go to my next Challenge button"" is enabled without meeting the first two conditions :
+-Your h2 element should degrade to the font ""Monospace"" when ""Lobster"" is not available.
+-Your h2 element should degrade to the font ""Monospace"" when ""Lobster"" is not available.
+Also the conditions are repeats; there should be only 1.",2015-05-26T20:32:30Z,1,2015-05-27T15:28:03Z,3
+freeCodeCamp/freeCodeCamp,568,Bonfire: cash register leads to waypoint build a cash register,"The link Bonfire:cash register leads to the waypoint: build a cash register. The bonfire shows as incomplete, I have completed the cash register waypoint, which shows as complete. I'm not sure if they are meant to be different things?",2015-05-26T20:35:32Z,1,2015-05-27T01:58:48Z,1
+freeCodeCamp/freeCodeCamp,569,Challenge http://www.freecodecamp.com/challenges/waypoint-use-clockwise-notation-to-specify-the-padding-of-an-element has an issue ,"This challenge does not test the Clockwise Notation to Specify the Padding of an Element
+; it rather is repeat of a previous challenge",2015-05-26T20:42:03Z,1,2015-05-29T22:41:45Z,3
+freeCodeCamp/freeCodeCamp,570,Challenge http://www.freecodecamp.com/challenges/waypoint-turn-an-image-into-a-link has an issue ,"I think there is a bug here.
+
+Here is my change, but FCC does not pass it:
+
+<p>Click here for <a href='#'> <img src='http://bit.ly/fcc-kittens2'> </a>.</p>
+
+
+The code below passes FCC, but the html is incorrect
+
+<a href='#'> <img src='http://bit.ly/fcc-kittens2'> </a>
+<a href='#'>
+<img class='smaller-image thick-green-border' src='https://bit.ly/fcc-kittens'/>
+
+Notice, that the anchor tag is unclosed, and it still requires the 1st anchor tag there.
+I'm using the chrome browser.",2015-05-26T21:12:36Z,1,2015-05-28T14:54:20Z,2
+freeCodeCamp/freeCodeCamp,571,Challenge http://www.freecodecamp.com/challenges/waypoint-link-to-external-pages-with-anchor-elements has an issue ,dont work,2015-05-26T21:21:13Z,1,2015-05-27T01:59:51Z,3
+freeCodeCamp/freeCodeCamp,572,add border color check and MDN border docs link to Waypoint: Add Borders Around Your Element ,"Conflicting statements to confuse new beginners. In the Top portion it asks for ""10-pixel-wide green border""; but below in your checks it states ""Your image should have a border with a width of 10 pixels.""; yet your code must have this:
+.thick-green-border {
+border-width: 10px;
+border-color: green;
+border-style: solid;
+}
+Nothing in there states to make the border solid, the top asks for color while the bottom doesn't not state the color.
+I consider myself pretty well beyond beginners level HTML/CSS although not a master by any means, and this one stumped me for a few minutes where i had to ask for help.",2015-05-26T21:35:12Z,1,2015-05-28T13:49:49Z,3
+freeCodeCamp/freeCodeCamp,573,Challenge http://www.freecodecamp.com/challenges/waypoint-add-borders-around-your-elements has an issue ,"I'm getting a error ""Your image should have a border with a width of 10 pixels."" In my code i have 10px border color green and solid..
+
+<style>
+  .red-text {
+    color: red;
+  }
+h2 {
+    font-family: Lobster, Monospace;
+  }
+ p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+  .thick-green-border{
+      border-style: solid;  
+      border-width: 10px;
+      border-color:green;
+  }
+ </style>
+CatPhotoApp
+
+Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
+Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.",2015-05-26T21:42:37Z,1,2015-05-27T02:05:32Z,1
+freeCodeCamp/freeCodeCamp,574,Challenge http://www.freecodecamp.com/challenges/waypoint-get-set-for-basejumps has an issue ,"Hi, is there any other solution, where I don't need a credit card? Having read about this rumor http://readwrite.com/2015/04/01/heroku-price-hike-rumor
+It would be nicer to have a free solution. There may be plenty of people from countries, where they don't have any of the available credit cards.
+Thank you for your answer.",2015-05-26T21:45:10Z,1,2015-05-26T21:53:47Z,1
+freeCodeCamp/freeCodeCamp,575,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-set-of-radio-buttons has an issue ,,2015-05-26T21:49:31Z,1,2015-05-27T02:09:05Z,1
+freeCodeCamp/freeCodeCamp,576,Challenge http://www.freecodecamp.com/challenges/waypoint-link-to-external-pages-with-anchor-elements has an issue ,"Typo? Not a big issue, but the pass requirements has slightly different text then the instructions. ""cat photos"" vs ""see my cat photos"" it does work with either one as long as it has ""cat photos"" in it.
+Create an anchor element that links to http://catphotoapp.com and has ""cat photos"" as its anchor text (link text).
+Your anchor element should have the anchor text of ""See my cat photos""",2015-05-26T21:50:20Z,1,2015-05-27T02:14:48Z,1
+freeCodeCamp/freeCodeCamp,577,Challenge http://www.freecodecramp.com/challenges/waypoint-create-a-set-of-checkboxes has an issue,,2015-05-26T21:51:36Z,1,2015-05-27T02:20:05Z,1
+freeCodeCamp/freeCodeCamp,578,Syntax error unrecognized expression: waypoint-check-radio-buttons-and-checkboxes-by-default,,2015-05-26T21:52:56Z,1,2015-05-26T22:33:34Z,3
+freeCodeCamp/freeCodeCamp,579,Challenge http://www.freecodecamp.com/challenges/waypoint-build-a-cash-register has an issue ,"Please tell us in detail here how we can make this challenge better.
+The Advanced Algorithm Scripting challenges don't seem to show completed after completing the challenges.",2015-05-26T21:59:51Z,1,2015-05-28T14:50:10Z,2
+freeCodeCamp/freeCodeCamp,580,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-set-of-checkboxes has an issue ,"Please tell us in detail here how we can make this challenge better.
+Waypoint: Create a Set of Checkboxes and Waypoint: Create a Set of Radio Buttons throws syntax errors before the challenge is started. After completing the challenge a green checkmark shows up beside one of the requirements but the syntax errors are still there preventing one from moving on the next challenge and completing the present one.",2015-05-26T22:04:30Z,1,2015-05-26T22:32:44Z,1
+freeCodeCamp/freeCodeCamp,581,expand tests in waypoint-create-a-set-of-radio-buttons,"I only had one name typed into the radio button field before it accepted that I had both names entered.  Only make it so both fields need to have a shared name before triggering the ""accepted"" state.",2015-05-26T22:06:01Z,1,2015-05-27T02:08:07Z,2
+freeCodeCamp/freeCodeCamp,582,Challenge http://www.freecodecamp.com/challenges/waypoint-import-a-google-font has an issue ,"I'm glad this is included...it would be great if you could ""teach people to fish"" with this one...
+Show new users where to find google fonts,  & where to get the linking code.",2015-05-26T22:09:08Z,1,2015-05-26T22:13:08Z,1
+freeCodeCamp/freeCodeCamp,583,Challenge http://www.freecodecamp.com/challenges/waypoint-override-styles-with-important has an issue ,"this is in general for all the html/css challenges up to this point.
+It seems to me that the displayed instructions, before the ""more"" link, tell you the steps to make the test pass.   The ""more"" is an explanation (ie teaching) of the topic.
+I feel like these should be reversed...that it's easy to hack through the challenges just following the instructions without reading the teaching part.
+I've had this feeling for more than one challenge in the html/css, and even though I know the material fairly well, i feel like a new user could get caught up in completing these in a very mechanical fashion.",2015-05-26T22:11:43Z,1,2015-05-28T14:52:13Z,3
+freeCodeCamp/freeCodeCamp,584,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-set-of-radio-buttons has an issue ,"The steps are with the phrase ""Syntax error, unrecognized expression""",2015-05-26T22:27:46Z,1,2015-05-26T22:32:17Z,1
+freeCodeCamp/freeCodeCamp,585,Syntax error,This issue is to track Syntax error popping up in the challenges.,2015-05-26T22:31:43Z,1,2015-05-27T18:07:45Z,0
+freeCodeCamp/freeCodeCamp,586,Challenge http://www.freecodecamp.com/challenges/waypoint-add-images-to-your-website has an issue ,"Basically - and funny - when I paste this ""<img src=""http://bit.ly/fcc-kittens"" - the new editor is broken (guess special characters?)",2015-05-26T22:42:22Z,1,2015-05-26T23:07:10Z,5
+freeCodeCamp/freeCodeCamp,587,Challenge http://www.freecodecamp.com/challenges/bonfire-title-case-a-sentence has an issue ,"In the example of HERE IS MY HANDLE HERE IS MY SPOUT
+the first letter is capitalized, the exercise should specify that the other part of the word should be lower cased.",2015-05-26T22:48:55Z,1,2015-05-27T13:26:26Z,1
+freeCodeCamp/freeCodeCamp,588,Challenge http://www.freecodecamp.com/challenges/waypoint-create-a-set-of-radio-buttons has an issue ,"please check out the screen shot: http://imgur.com/aEteNfl
+basically two of the 3 objectives are error messages
+Also, if I try to create the label element below my current code, all 3 objectives disappear.
+Safari, latest version
+OSX, latest version
+Worked mostly fine on Chrome, same OS. Objectives still disappeared, but creating the label element, etc elsewhere in the code was fine.",2015-05-26T23:22:24Z,1,2015-05-27T01:44:22Z,0
+freeCodeCamp/freeCodeCamp,589,Challenge http://www.freecodecamp.com/challenges/waypoint-use-clockwise-notation-to-specify-the-padding-of-an-element has an issue ,"The objectives right now are pretty confusing:
+
+Your green-box class should give the bottom of elements 20px of padding.
+Your green-box class should give the left of elements 40px of padding.
+This suggests, to me at least, that through Clockwise Notation it is possible to assign padding to just the Bottom and Just the Left. Total NewB here, but it seems to me that you have to assign it to the top/bottom and left/right. I can't find anyway other than padding-bottom, etc to change the top without changing the top.",2015-05-26T23:44:11Z,1,2015-05-27T00:44:16Z,2
+freeCodeCamp/freeCodeCamp,590,Challenge http://www.freecodecamp.com/challenges/waypoint-create-an-ordered-list has an issue ,"I copied and pasted in preparation for creating the OL list.
+The ""Correct -- You're Done!"" thingy got triggered after I edited the first UL into a OL --- but before I edited the closing UL tag.
+My ""correct"" code reads:
+Things cats hate:
+
+  cat nip
+  laser pointers
+  lasagna
+                <--- note closing UL not OL",2015-05-26T23:45:38Z,1,2015-05-27T00:38:49Z,1
+freeCodeCamp/freeCodeCamp,591,Challenge http://www.freecodecamp.com/challenges/waypoint-add-placeholder-text-to-a-text-field has an issue ,"This one declared me to be correct/done as soon as I typed the word ""placeholder"" --- it did not wait for me to actually supply the placeholder text.
+My ""correct"" html code:
+<input type='text' placeholder>",2015-05-27T00:05:50Z,1,2015-05-27T00:36:58Z,2
+freeCodeCamp/freeCodeCamp,593,Challenge http://www.freecodecamp.com/challenges/waypoint-uncomment-html has an issue ,"Just wanted to point out that the word ""be"" seems to be missing on the bottom three instructions. as in  ""should not be commented out"". No big deal but wanted to mention it. New challenges look nice. Great work with continuously improving.",2015-05-27T01:07:36Z,1,2015-05-27T13:31:30Z,1
+freeCodeCamp/freeCodeCamp,594,Challenge http://www.freecodecamp.com/challenges/waypoint-line-up-form-elements-responsively-with-bootstrap has an issue ,"One of the instructions reads:
+Wrap your all of your checkboxes inside one div with the class ""row"".
+This challenges is not about the checkboxes, it should instead be:
+Wrap your text-area and button inside one div with the class ""row"".",2015-05-27T01:16:31Z,1,2015-05-27T13:40:57Z,1
+freeCodeCamp/freeCodeCamp,595,Challenge http://www.freecodecamp.com/challenges/waypoint-import-a-google-font has an issue ,Challenge passes even though the imported font is not displayed. Someone can pass the challenge without copying and pasting the Google font as is the point of the excercise. It would be better if they had to stop and read the instruction on copying and pasting the link to get a better idea of how to import an actual Google font. Lobster is a really cool font example! Great choice!,2015-05-27T01:19:49Z,1,2015-05-27T02:07:50Z,0
+freeCodeCamp/freeCodeCamp,596,Mobile view iframe and more info buttons not working,https://www.evernote.com/l/AHRJHN0GUblKmr_TVgojfQMNCZayEh_dW1EB/image.png,2015-05-27T01:24:34Z,1,2015-05-27T19:16:52Z,0
+freeCodeCamp/freeCodeCamp,597,Challenge http://www.freecodecamp.com/challenges/waypoint-check-radio-buttons-and-checkboxes-by-default has an issue ,"The answers as follows for the Waypoints from ""Waypoint: Create a Set of Radio Buttons"" till ""Waypoint: Check Radio Buttons and Checkboxes by Default"" couldn't go through. Please check it out.
+ Indoor
+ Outdoor
+
+ Loving
+ Lazy
+ Crazy",2015-05-27T01:34:15Z,1,2015-05-28T14:48:22Z,3

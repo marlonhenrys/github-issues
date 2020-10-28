@@ -1,0 +1,21 @@
+{
+  "name": "github-issues",
+  "description": "Mining GitHub repositories",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/marlonhenrys/github-issues",
+  "author": "Marlon Henrique",
+  "license": "MIT",
+  "scripts": {
+    "repos": "node index.js --repos -n JavaScript -a 100 && node index.js --repos -n Python -a 100 && node index.js --repos -n Java -a 100",
+    "issues": "node index.js --issues",
+    "mine": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "minimist": "^1.2.5",
+    "neat-csv": "^5.2.0",
+    "objects-to-csv": "^1.3.6"
+  }
+}
