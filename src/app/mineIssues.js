@@ -12,7 +12,7 @@ module.exports = async params => {
             const [owner, name] = repos[index].nameWithOwner.split('/')
             Object.assign(params, { owner, name })
 
-            do {
+            // do {
                 try {
                     const { nodes, pageInfo } = await fetch.one(params)
 
@@ -26,15 +26,15 @@ module.exports = async params => {
                         console.log(yellow, '\nNenhuma issue coletada.')
                     }
 
-                    params.hasNextPage = pageInfo.hasNextPage
-                    params.cursor = pageInfo.hasNextPage ? pageInfo.endCursor : null
+                    // params.hasNextPage = pageInfo.hasNextPage
+                    // params.cursor = pageInfo.hasNextPage ? pageInfo.endCursor : null
 
                 } catch (error) {
                     console.log(red, error.message)
                     console.log('\n[ISSUE] Tentando novamente...')
                 }
 
-            } while (params.hasNextPage)
+            // } while (params.hasNextPage)
 
         } catch (error) {
             console.log(red, error.message)

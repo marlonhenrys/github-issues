@@ -39,7 +39,6 @@ module.exports = {
             const {
                 number,
                 title,
-                bodyText,
                 publishedAt,
                 closed,
                 closedAt
@@ -52,7 +51,6 @@ module.exports = {
                 repository,
                 number,
                 title,
-                bodyText,
                 publishedAt,
                 closed,
                 closedAt,

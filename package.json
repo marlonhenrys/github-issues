@@ -7,7 +7,7 @@
   "author": "Marlon Henrique",
   "license": "MIT",
   "scripts": {
-    "repos": "node index.js --repos -n JavaScript -a 100 && node index.js --repos -n Python -a 100 && node index.js --repos -n Java -a 100",
+    "repos": "node index.js --repos -n JavaScript -a 10 && node index.js --repos -n Python -a 10 && node index.js --repos -n Java -a 10",
     "issues": "node index.js --issues",
     "mine": "node index.js"
   },

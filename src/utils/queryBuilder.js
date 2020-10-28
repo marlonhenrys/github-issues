@@ -33,7 +33,7 @@ module.exports = {
     findOne: (name, owner, cursor) => `
         {
             repository(name: "${name}", owner: "${owner}") {
-                issues(first: 100, after: ${cursor}) {
+                issues(last: 40, after: ${cursor}) {
                     pageInfo {
                         endCursor
                         hasNextPage
@@ -41,7 +41,6 @@ module.exports = {
                     nodes {
                         number
                         title
-                        bodyText
                         publishedAt
                         closed
                         closedAt
