@@ -9,13 +9,13 @@ module.exports = {
 
         const csv = new ObjectsToCsv(list)
 
-        await csv.toDisk(`./files/${filename}.csv`, { append: true })
+        await csv.toDisk(`./data/${filename}.csv`, { append: true })
     },
 
     read: async filename => {
         console.log('\nCarregando lista de repositórios...')
 
-        const file = await fs.readFile(`./files/${filename}.csv`)
+        const file = await fs.readFile(`./data/${filename}.csv`)
 
         return readCsv(file)
     }
