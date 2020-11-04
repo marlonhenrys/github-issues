@@ -3,6 +3,7 @@ module.exports = {
     initial: 0,
     filename: {
         repos: 'repos',
-        issues: 'issues'
+        issues: 'issues',
+        posts: 'posts'
     }
 }

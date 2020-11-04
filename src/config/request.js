@@ -7,5 +7,9 @@ module.exports = {
             Authorization: `Bearer ${process.env.ACCESS_TOKEN}`
         }
     },
-    variables: {}
+    variables: {},
+    stackOverflow: {
+        key: process.env.SO_KEY,
+        access_token: process.env.SO_TOKEN
+    }
 }
