@@ -13,7 +13,7 @@
     "mine": "node index.js"
   },
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.0",
     "dotenv": "^8.2.0",
     "minimist": "^1.2.5",
     "neat-csv": "^5.2.0",
