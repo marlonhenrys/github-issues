@@ -51,5 +51,8 @@ module.exports = {
                 }
             }
         }
-    `
+    `,
+
+    posts: (repository, number) =>
+        `order=desc&sort=activity&q=${repository} ${number}&site=stackoverflow`
 }

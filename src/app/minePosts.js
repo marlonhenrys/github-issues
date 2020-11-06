@@ -1,31 +1,35 @@
-// usar isso no helper fetch (criar nova função)
-const axios = require('axios');
-const fs = require('fs');
+const fetch = require('../helpers/fetch')
+const format = require('../helpers/format')
 const file = require('../helpers/file')
+const { red, green, yellow } = require('../config/console')
 
-const api = axios.create({
-    baseURL: 'https://api.stackexchange.com'
-})
+const sleep = require('util').promisify(setTimeout)
 
 module.exports = async params => {
-    const issues = [];
-    const soIssues = [];
+    const issues = await file.read(params.storage)
+    let index = params.initial
 
-    var fileContents = fs.readFileSync('data/issues.csv');
-    var lines = fileContents.toString().split('\n');
+    for (index; index < issues.length; index++) {
 
-    for (var i = 0; i < lines.length; i++) {
-        issues.push(lines[i].toString().split(','));
-    }
+        try {
+            const result = await fetch.posts(issues[index])
+            await sleep(3000)
 
-    for(const issue of issues){
-        const res = await api.get(`/2.2/search/advanced?order=desc&sort=activity&q=${issue[0]} ${issue[1]}&site=stackoverflow`)
-        const formattedNodes = {
-            repo: issue[0],
-            issueNumber: issue[1],
-            foundOnSO: res.data && res.data.length
+            // if (result) {
+            //     const formattedNodes = format.posts(nodes, issues[index])
+
+            //     await file.save(formattedNodes, params.filename)
+            //     console.log(green, `\n+${formattedNodes.length} posts coletados`)
+
+            // } else {
+            //     console.log(yellow, '\nNenhum post coletado.')
+            // }
+
+        } catch (error) {
+            console.log(red, error.message)
+            console.log('\nTentando novamente...')
+            index--
         }
-        soIssues.push(formattedNodes)
     }
-    await file.save(soIssues, params.filename)
+    console.log(`\nColeta de posts finalizada!\n`)
 }

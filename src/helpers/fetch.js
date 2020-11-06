@@ -1,6 +1,6 @@
 const axios = require('axios')
 const queryBuilder = require('../utils/queryBuilder')
-const { endpoint, options, variables } = require('../config/request')
+const { endpoint, options, variables, stackExchange } = require('../config/request')
 
 module.exports = {
     list: async ({ cursor, perPage, language, count }) => {
@@ -27,5 +27,19 @@ module.exports = {
         const { nodes, pageInfo } = response.data.data.repository.issues
 
         return { nodes, pageInfo }
+    },
+
+    posts: async ({ repository, number }) => {
+
+        const query = queryBuilder.posts(repository, number)
+        const endpoint = stackExchange + query
+
+        console.log('\nBuscando dados... ' + `(${repository} | issue#${number})`)
+
+        const response = await axios.get(endpoint)
+
+        console.log(endpoint, response.data)
+
+        return response.data
     }
 }

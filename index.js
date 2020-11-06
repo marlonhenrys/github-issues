@@ -27,5 +27,5 @@ args.repos
         ? mineIssues(params)
         : args.posts
             ? minePosts(params)
-            : console.log('Informe a mineração a ser executada (--repos ou --issues)')
+            : console.log('Informe a mineração a ser executada (--repos / --issues / --posts)')
 

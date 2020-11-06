@@ -8,8 +8,5 @@ module.exports = {
         }
     },
     variables: {},
-    stackOverflow: {
-        key: process.env.SO_KEY,
-        access_token: process.env.SO_TOKEN
-    }
+    stackExchange: 'https://api.stackexchange.com/2.2/search/advanced?'
 }

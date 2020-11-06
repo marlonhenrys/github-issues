@@ -57,5 +57,9 @@ module.exports = {
                 commentCount
             }
         })
+    },
+
+    posts: (nodes, issue) => {
+
     }
 }
