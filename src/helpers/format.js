@@ -59,7 +59,11 @@ module.exports = {
         })
     },
 
-    posts: (nodes, issue) => {
-
-    }
+    posts: (nodes, issue) => (
+        [{
+            repository: issue.repository,
+            number: issue.number,
+            quantity: nodes.length
+        }]
+    )
 }

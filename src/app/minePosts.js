@@ -15,15 +15,15 @@ module.exports = async params => {
             const result = await fetch.posts(issues[index])
             await sleep(3000)
 
-            // if (result) {
-            //     const formattedNodes = format.posts(nodes, issues[index])
+            if (result) {
+                const formattedNodes = format.posts(result.items, issues[index])
 
-            //     await file.save(formattedNodes, params.filename)
-            //     console.log(green, `\n+${formattedNodes.length} posts coletados`)
+                await file.save(formattedNodes, params.filename)
+                console.log(green, `\n+${formattedNodes.length} posts coletados`)
 
-            // } else {
-            //     console.log(yellow, '\nNenhum post coletado.')
-            // }
+            } else {
+                console.log(yellow, '\nNenhum post coletado.')
+            }
 
         } catch (error) {
             console.log(red, error.message)
